@@ -18,6 +18,13 @@ body {
   padding: 48px;
   gap: 32px;
 }
+.hero-title {
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
 
 .hero__content {
   max-width: 460px;
