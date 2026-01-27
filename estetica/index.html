@@ -1,43 +1,218 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-AR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Estética Demo | Vigolo Web Studio</title>
-  <meta name="description" content="Demo de página web para estética. Diseño limpio, moderno y enfocado en generar consultas." />
+  <title>Demo Estética Premium | Vigolo Web Studio</title>
+  <meta name="description" content="Demo premium de web para estética: diseño claro, elegante y orientado a turnos por WhatsApp." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <main class="hero">
-    <div class="hero__content">
-      <span class="pill">Demo estética</span>
-      <h1 class="hero-title">
-  Web profesional para estética<br>
-  que atrae más clientas
-</h1>
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <div class="brand__mark">✨</div>
+        <div class="brand__text">
+          <strong>Tu Estética</strong>
+          <small>Facial • Corporal • Bienestar</small>
+        </div>
+      </div>
 
-      <p>
-        Una página web clara para mostrar tus servicios y generar consultas
-        directas por WhatsApp.
-      </p>
-
-      <a class="btn" href="#" onclick="alert('Demo — botón de WhatsApp')">
-        Consultar por WhatsApp
+      <a class="btn btn--primary" target="_blank" rel="noopener"
+         href="https://wa.me/541128074105?text=Hola%2C%20quiero%20reservar%20un%20turno.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%3F">
+        Reservar por WhatsApp
       </a>
     </div>
+  </header>
 
-    <div class="hero__image">
-      <img
-        src="img/estetica-hero.jpg"
-        alt="Ambiente de estética limpio y premium"
-        loading="eager"
-      />
-    </div>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="pill">Demo premium • Turnos por WhatsApp • Diseño high-ticket</span>
+
+          <h1 class="hero-title">
+            Web profesional para estética<br>
+            <span>que atrae más clientas</span>
+          </h1>
+
+          <p class="lead">
+            Una página clara y elegante para mostrar tus servicios, generar confianza y convertir visitas en turnos.
+          </p>
+
+          <div class="badges">
+            <span class="badge">✅ Imagen premium</span>
+            <span class="badge">⚡ Rápida y mobile-first</span>
+            <span class="badge">📲 CTA directo a WhatsApp</span>
+          </div>
+
+          <div class="actions">
+            <a class="btn btn--primary" target="_blank" rel="noopener"
+               href="https://wa.me/541128074105?text=Hola%2C%20quiero%20reservar%20un%20turno.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%3F">
+              Reservar turno
+            </a>
+            <a class="btn btn--ghost" href="#servicios">Ver servicios</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>+Confianza</strong>
+              <span>Presentación clara y profesional</span>
+            </div>
+            <div class="stat">
+              <strong>+Consultas</strong>
+              <span>Botones y secciones pensadas para convertir</span>
+            </div>
+            <div class="stat">
+              <strong>+Valor</strong>
+              <span>Se siente “premium” desde el primer segundo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="media">
+            <img src="img/estetica-hero.jpg" alt="Ambiente de estética limpio y premium" loading="eager" />
+            <div class="media__chip">
+              <strong>Agenda abierta</strong>
+              <span>Reservá tu turno por WhatsApp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Servicios destacados</h2>
+          <p>Lo esencial, bien presentado. Menos confusión = más reservas.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <h3>Limpieza facial profunda</h3>
+            <p>Rutina profesional para mejorar textura, brillo y poros.</p>
+          </article>
+          <article class="card">
+            <h3>Tratamientos corporales</h3>
+            <p>Plan personalizado según tu objetivo y evaluación.</p>
+          </article>
+          <article class="card">
+            <h3>Depilación definitiva</h3>
+            <p>Sesiones planificadas + recomendaciones post-tratamiento.</p>
+          </article>
+          <article class="card">
+            <h3>Masajes relajantes</h3>
+            <p>Alivio de tensión, bienestar y descanso real.</p>
+          </article>
+          <article class="card">
+            <h3>Manos y pies</h3>
+            <p>Prolijidad, higiene y acabado premium.</p>
+          </article>
+          <article class="card card--accent">
+            <h3>Consulta por WhatsApp</h3>
+            <p>Te asesoramos y te pasamos disponibilidad al momento.</p>
+            <a class="mini-cta" target="_blank" rel="noopener"
+               href="https://wa.me/541128074105?text=Hola%2C%20quiero%20consultar%20por%20turnos.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%3F">
+              Consultar ahora →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIALES -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Por qué esta web vende más</h2>
+          <p>Una estética premium tiene que verse premium. La decisión se acelera cuando todo está claro.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="feature">
+            <h3>Diseño elegante</h3>
+            <p>Tipografías, espaciado y composición para una imagen de alto nivel.</p>
+          </div>
+          <div class="feature">
+            <h3>Conversión real</h3>
+            <p>CTA visibles + secciones con intención: menos dudas, más WhatsApps.</p>
+          </div>
+          <div class="feature">
+            <h3>Mobile first</h3>
+            <p>La mayoría reserva desde el celular. Acá se ve fuerte desde ahí.</p>
+          </div>
+          <div class="feature">
+            <h3>Orden y claridad</h3>
+            <p>Servicios, horarios y ubicación bien presentados: confianza inmediata.</p>
+          </div>
+        </div>
+
+        <div class="cta-band">
+          <div class="cta-band__text">
+            <strong>¿Querés tu web así?</strong>
+            <span>Te la adaptamos con tu marca, servicios, ciudad y fotos.</span>
+          </div>
+          <a class="btn btn--primary" target="_blank" rel="noopener"
+             href="https://wa.me/541128074105?text=Hola%2C%20quiero%20una%20web%20as%C3%AD%20para%20mi%20est%C3%A9tica.%20%C2%BFQu%C3%A9%20necesitan%20para%20arrancar%3F">
+            Pedir propuesta
+          </a>
+        </div>
+
+        <p class="disclaimer">
+          Sitio de ejemplo – demo de diseño (Vigolo Web Studio).
+        </p>
+      </div>
+    </section>
+
+    <!-- INFO / FOOTER -->
+    <section class="section">
+      <div class="container">
+        <div class="info">
+          <div class="info__block">
+            <h2>Información</h2>
+            <div class="info__grid">
+              <div>
+                <p class="label">Ubicación</p>
+                <p class="value">Ciudad, Argentina</p>
+              </div>
+              <div>
+                <p class="label">Horarios</p>
+                <p class="value">Lun a Vie • 9:00 a 18:00</p>
+              </div>
+              <div>
+                <p class="label">Instagram</p>
+                <p class="value">@tuestetica</p>
+              </div>
+            </div>
+
+            <div class="actions actions--tight">
+              <a class="btn btn--primary" target="_blank" rel="noopener"
+                 href="https://wa.me/541128074105?text=Hola%2C%20quiero%20reservar%20un%20turno.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%3F">
+                Reservar por WhatsApp
+              </a>
+              <a class="btn btn--ghost" href="#servicios">Volver a servicios</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Tu Estética</span>
+        <span class="muted">Demo premium • Vigolo Web Studio</span>
+      </div>
+    </footer>
   </main>
 
-  <footer>
-    <p>Demo creada por Vigolo Web Studio</p>
-  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
