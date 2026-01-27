@@ -1,80 +1,90 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-AR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Demo Barbería — Vigolo Web Studio. Diseño premium moderno para generar turnos por WhatsApp." />
-  <title>Demo Barbería | Vigolo Web Studio</title>
+  <meta name="description" content="Demo Barbería Premium 2026 — landing moderna, rápida y pensada para convertir visitas en consultas por WhatsApp." />
+  <title>Demo Barbería Premium | Vigolo Web Studio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="top">
-    <div class="container top__inner">
-      <a class="brand" href="#">
-        <span class="dot"></span>
-        <span>Barbería Premium</span>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#" aria-label="Demo Barbería">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">
+          <strong>Barbería Premium</strong>
+          <small>Demo • Vigolo Web Studio</small>
+        </span>
       </a>
 
-      <a class="btn btn--ghost" target="_blank" rel="noopener"
-         href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20una%20web%20como%20la%20demo%20Barber%C3%ADa.%20%C2%BFPueden%20pasarme%20info%20y%20precio%3F">
+      <a class="btn btn--primary" target="_blank" rel="noopener"
+         href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20una%20web%20para%20mi%20barber%C3%ADa.%20%C2%BFMe%20pas%C3%A1s%20info%20y%20ejemplos%3F">
         Consultar
       </a>
     </div>
   </header>
 
-  <main class="hero">
-    <div class="container hero__grid">
-      <div class="hero__text">
-        <p class="pill">Demo • Barbería • Estilo premium 2026</p>
-        <h1>Tu barbería se ve <span>pro</span>.<br/>Tus turnos suben.</h1>
-        <p class="sub">
-          Landing moderna, rápida y pensada para convertir visitas en consultas por WhatsApp.
-        </p>
+  <main class="container">
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <p class="pill">Demo • Barbería • Estilo premium 2026</p>
 
-        <div class="cta">
-          <a class="btn btn--gold" target="_blank" rel="noopener"
-             href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20mi%20web%20para%20barber%C3%ADa.%20%C2%BFC%C3%B3mo%20arrancamos%3F">
-            Reservar / Pedir info
-          </a>
-          <a class="btn btn--dark" href="#info">Ver detalles</a>
+          <h1 class="title">
+            Tu barbería se ve pro.<br />
+            <span class="accent">Tus turnos suben.</span>
+          </h1>
+
+          <p class="subtitle">
+            Landing moderna, rápida y pensada para convertir visitas en consultas por WhatsApp.
+            Ideal para mostrar servicios, ubicación y reservas en 30 segundos.
+          </p>
+
+          <div class="actions">
+            <a class="btn btn--primary btn--big" target="_blank" rel="noopener"
+               href="https://wa.me/541128074105?text=Hola%2C%20quiero%20reservar%2Fpedir%20info%20para%20mi%20barber%C3%ADa.%20%C2%BFMe%20pas%C3%A1s%20detalles%3F">
+              Reservar / Pedir info
+            </a>
+
+            <a class="btn btn--ghost btn--big" href="#detalles">
+              Ver detalles
+            </a>
+          </div>
+
+          <ul id="detalles" class="bullets">
+            <li><strong>WhatsApp directo:</strong> botón visible y claro</li>
+            <li><strong>Diseño premium:</strong> negro + dorado, look moderno</li>
+            <li><strong>Mobile first:</strong> se ve excelente en iPhone y Android</li>
+          </ul>
         </div>
 
-        <div class="stats" id="info">
-          <div class="stat">
-            <strong>WhatsApp directo</strong>
-            <span>Botón visible todo el tiempo</span>
-          </div>
-          <div class="stat">
-            <strong>Diseño premium</strong>
-            <span>Negro + dorado, look moderno</span>
-          </div>
-          <div class="stat">
-            <strong>Mobile first</strong>
-            <span>Perfecta en celular</span>
-          </div>
+        <div class="hero__media">
+          <figure class="media">
+            <img
+              src="img/barberia-hero.jpg"
+              alt="Barbería premium moderna"
+              loading="eager"
+            />
+            <figcaption class="badge">
+              <strong>Demo Barbería</strong>
+              <span>Vigolo Web Studio</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
+    </section>
 
-      <div class="hero__media">
-        <div class="card">
-          <img src="img/barberia-hero.jpg" alt="Ambiente moderno de barbería premium" loading="eager" />
-          <div class="badge">
-            <strong>Demo Barbería</strong>
-            <span>Vigolo Web Studio</span>
-          </div>
-        </div>
+    <footer class="footer">
+      <div class="footer__inner">
+        <span>Demo Barbería — Vigolo Web Studio</span>
+        <a class="footer__link" target="_blank" rel="noopener"
+           href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20una%20web%20para%20mi%20barber%C3%ADa.%20%C2%BFMe%20pas%C3%A1s%20info%3F">
+          WhatsApp
+        </a>
       </div>
-    </div>
+    </footer>
   </main>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <span>Demo creada por <strong>Vigolo Web Studio</strong></span>
-      <a target="_blank" rel="noopener"
-         href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20una%20web%20as%C3%AD.%20%C2%BFCu%C3%A1nto%20sale%3F">
-        WhatsApp
-      </a>
-    </div>
-  </footer>
 </body>
 </html>
