@@ -1,16 +1,20 @@
 :root{
-  --bg:#0b0d10;
-  --panel:#0f1216;
-  --card:#12161c;
-  --text:#f2f2f2;
-  --muted:rgba(242,242,242,.72);
+  --bg:#0a0b0d;
+  --bg2:#0f1115;
+  --card:rgba(255,255,255,.04);
   --line:rgba(255,255,255,.10);
+  --text:#f2f4f7;
+  --muted:rgba(242,244,247,.72);
 
-  --gold:#d6b25e;
-  --gold2:#f0d08a;
+  /* Dorado premium (no amarillo chillón) */
+  --gold:#c8a24a;
+  --gold2:#f0d38a;
 
   --radius:18px;
-  --shadow: 0 18px 55px rgba(0,0,0,.55);
+  --radius2:24px;
+  --shadow: 0 22px 60px rgba(0,0,0,.55);
+
+  --container: 1100px;
 }
 
 *{box-sizing:border-box}
@@ -20,264 +24,236 @@ body{
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
   color:var(--text);
   background:
-    radial-gradient(900px 600px at 20% 10%, rgba(214,178,94,.12), transparent 60%),
-    radial-gradient(900px 600px at 85% 15%, rgba(240,208,138,.08), transparent 60%),
-    linear-gradient(180deg, var(--bg), #07080a);
+    radial-gradient(900px 560px at 15% 10%, rgba(200,162,74,.18), transparent 60%),
+    radial-gradient(900px 560px at 85% 10%, rgba(240,211,138,.10), transparent 60%),
+    linear-gradient(180deg, var(--bg), var(--bg2));
 }
 
 img{max-width:100%; display:block}
 a{color:inherit; text-decoration:none}
+.container{width:min(var(--container), 92%); margin:0 auto}
 
-.container{width:min(1120px, 92%); margin:0 auto}
-
-/* Top bar */
+/* Topbar */
 .topbar{
   position:sticky; top:0; z-index:50;
-  background: rgba(9,10,12,.72);
-  backdrop-filter: blur(12px);
+  background: rgba(10,11,13,.78);
+  backdrop-filter: blur(10px);
   border-bottom:1px solid var(--line);
 }
 .topbar__inner{
   display:flex; align-items:center; justify-content:space-between;
-  gap:12px;
-  padding:12px 0;
+  gap:14px; padding:14px 0;
 }
-.brand{
-  display:flex; align-items:center; gap:10px;
-  min-width: 0;
+.brand{display:flex; align-items:center; gap:10px; min-width:0}
+.brand__dot{
+  width:12px; height:12px; border-radius:999px;
+  background: radial-gradient(circle at 30% 30%, var(--gold2), var(--gold));
+  box-shadow: 0 0 0 4px rgba(200,162,74,.12);
 }
-.brand__pill{
-  display:inline-flex;
-  padding:6px 10px;
-  border-radius:999px;
-  border:1px solid var(--line);
-  background: rgba(255,255,255,.04);
-  color: rgba(255,255,255,.78);
-  font-weight:800;
-  font-size:12px;
-  letter-spacing:.02em;
+.brand__text{display:flex; flex-direction:column; line-height:1.1; min-width:0}
+.brand__text strong{
+  letter-spacing:.06em;
+  font-weight:900;
   white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
-.brand__sub{
-  color: rgba(255,255,255,.60);
-  font-size:12px;
+.brand__text small{
+  color:var(--muted);
+  letter-spacing:.10em;
+  margin-top:4px;
   white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 
 /* Buttons */
 .btn{
   display:inline-flex; align-items:center; justify-content:center;
-  border-radius:999px;
+  gap:10px;
   padding:12px 16px;
-  font-weight:900;
-  letter-spacing:.01em;
+  border-radius: 999px;
   border:1px solid var(--line);
   background: rgba(255,255,255,.04);
-  transition: transform .12s ease, border-color .12s ease, background .12s ease;
+  font-weight:900;
+  letter-spacing:.01em;
+  transition: transform .12s ease, background .12s ease, border-color .12s ease, box-shadow .12s ease;
   user-select:none;
 }
 .btn:active{transform: translateY(1px)}
-.btn--gold{
-  border-color: rgba(214,178,94,.45);
-  background: linear-gradient(135deg, rgba(214,178,94,.22), rgba(240,208,138,.18));
+.btn--big{padding:14px 18px}
+.btn--primary{
+  border-color: rgba(200,162,74,.35);
+  background:
+    linear-gradient(135deg, rgba(200,162,74,.22), rgba(240,211,138,.12));
+  box-shadow: 0 14px 40px rgba(200,162,74,.08);
 }
-.btn--gold:hover{border-color: rgba(214,178,94,.70)}
-.btn--ghost:hover{background: rgba(255,255,255,.06)}
+.btn--primary:hover{
+  border-color: rgba(200,162,74,.55);
+  background:
+    linear-gradient(135deg, rgba(200,162,74,.28), rgba(240,211,138,.16));
+}
+.btn--ghost{
+  background: transparent;
+}
+.btn--ghost:hover{background: rgba(255,255,255,.05)}
 
 /* Hero */
-.hero{
-  padding: 26px 0 56px;
-}
+.hero{padding: 26px 0 34px}
 .hero__grid{
   display:grid;
   grid-template-columns: 1.05fr .95fr;
   gap:22px;
-  align-items:start;
-}
-
-.kicker{
-  display:inline-flex;
-  gap:10px;
   align-items:center;
-  font-size:12px;
-  color: rgba(255,255,255,.70);
-  border:1px solid var(--line);
-  background: rgba(255,255,255,.04);
+}
+.hero__content{max-width: 62ch}
+
+.pill{
+  display:inline-flex;
   padding:8px 12px;
   border-radius:999px;
+  border:1px solid rgba(200,162,74,.24);
+  background: rgba(255,255,255,.03);
+  color: rgba(240,211,138,.92);
+  font-weight:900;
+  letter-spacing:.03em;
+  margin: 4px 0 14px;
 }
-.kicker b{color: var(--gold2)}
 
-h1{
-  margin:14px 0 10px;
-  font-size: clamp(34px, 4vw, 56px);
-  line-height: 1.02;
+.title{
+  margin:0 0 10px;
+  font-weight:1000;
   letter-spacing:-.02em;
+  line-height:1.05;
+  font-size: clamp(34px, 4.2vw, 56px);
 }
-h1 .gold{
-  background: linear-gradient(90deg, var(--gold), var(--gold2));
+.accent{
+  background: linear-gradient(90deg, var(--gold2), var(--gold));
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
 }
-.lead{
-  margin:0;
-  color: var(--muted);
-  font-size: 17px;
-  line-height: 1.55;
-  max-width: 62ch;
+.subtitle{
+  margin:0 0 16px;
+  color:var(--muted);
+  font-size: clamp(15px, 1.2vw, 18px);
+  line-height:1.55;
 }
 
 .actions{
   display:flex;
   gap:12px;
   flex-wrap:wrap;
-  margin-top:18px;
+  margin: 14px 0 16px;
 }
-.actions .btn{min-height: 46px}
 
 .bullets{
-  margin-top:16px;
-  padding:0;
   list-style:none;
+  padding:0;
+  margin:0;
   display:grid;
   gap:8px;
 }
 .bullets li{
-  display:flex; gap:10px; align-items:flex-start;
-  color: rgba(255,255,255,.84);
-  font-weight:700;
+  padding-left:28px;
+  position:relative;
+  color: rgba(242,244,247,.92);
+  line-height:1.35;
+  font-size:14px;
 }
-.bullets li span{
-  display:inline-grid; place-items:center;
+.bullets li::before{
+  content:"✓";
+  position:absolute; left:0; top:0;
   width:20px; height:20px;
+  display:grid; place-items:center;
   border-radius:8px;
-  background: rgba(214,178,94,.14);
-  border:1px solid rgba(214,178,94,.28);
-  color: var(--gold2);
-  flex: 0 0 auto;
-  margin-top:2px;
+  background: rgba(200,162,74,.14);
+  border:1px solid rgba(200,162,74,.26);
+  color: rgba(240,211,138,.95);
+  font-weight:1000;
+  font-size:13px;
 }
 
-/* Image card */
-.hero__media{
+/* Media card (LA CLAVE para que celular no se vea como el culo) */
+.media{
   position:relative;
-}
-.media-card{
-  position:relative;
-  border-radius: 22px;
-  overflow:hidden;
+  border-radius: var(--radius2);
   border:1px solid var(--line);
-  background: rgba(255,255,255,.03);
+  background: var(--card);
   box-shadow: var(--shadow);
-}
-.media-card::after{
-  content:"";
-  position:absolute; inset:0;
-  background: linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.55));
-  pointer-events:none;
-}
-.media-card img{
-  width:100%;
-  height: 520px;
-  object-fit: cover;
-  /* CLAVE: esto mejora el recorte en celu */
-  object-position: center 55%;
-  filter: contrast(1.03) saturate(1.05);
+  overflow:hidden;
 }
 
+/* IMPORTANTE:
+   Usamos aspect-ratio para que en celular NO quede una imagen gigante
+   y se vea todo ordenado.
+*/
+.media img{
+  width:100%;
+  aspect-ratio: 16 / 10;   /* desktop/tablet */
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.03) contrast(1.05);
+}
+
+/* Badge fijo dentro de la foto, siempre visible */
 .badge{
   position:absolute;
-  left:50%;
+  left:14px;
   bottom:14px;
-  transform: translateX(-50%);
-  width: min(520px, calc(100% - 28px));
-  display:flex;
-  justify-content:space-between;
-  gap:10px;
-  align-items:center;
-  padding:12px 14px;
-  border-radius:16px;
-  border:1px solid rgba(255,255,255,.12);
-  background: rgba(10,10,12,.72);
+  padding:10px 12px;
+  border-radius: 14px;
+  border:1px solid rgba(255,255,255,.16);
+  background: rgba(10,11,13,.70);
   backdrop-filter: blur(10px);
-  z-index:2;
+  max-width: calc(100% - 28px);
 }
 .badge strong{
-  font-size:14px;
-  letter-spacing:.01em;
-}
-.badge small{
   display:block;
-  margin-top:2px;
-  color: rgba(255,255,255,.62);
-  font-weight:700;
+  font-weight:1000;
+  letter-spacing:.02em;
 }
-.badge .tag{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:8px 10px;
-  border-radius:999px;
-  border:1px solid rgba(214,178,94,.30);
-  background: rgba(214,178,94,.10);
-  color: rgba(255,255,255,.86);
-  font-weight:900;
-  white-space:nowrap;
+.badge span{
+  display:block;
+  color: rgba(242,244,247,.70);
+  font-size: 13px;
+  margin-top:2px;
 }
 
 /* Footer */
 .footer{
-  border-top:1px solid var(--line);
-  color: rgba(255,255,255,.60);
-  padding:18px 0 26px;
-  font-size:13px;
+  border-top:1px solid rgba(255,255,255,.08);
+  padding:18px 0 30px;
+  color: rgba(242,244,247,.70);
 }
 .footer__inner{
   display:flex;
+  align-items:center;
   justify-content:space-between;
   gap:12px;
   flex-wrap:wrap;
 }
+.footer__link{
+  color: rgba(240,211,138,.92);
+  font-weight:900;
+}
+.footer__link:hover{color: rgba(240,211,138,1)}
 
-/* Responsive (MOBILE FIRST) */
-@media (max-width: 920px){
-  .hero__grid{grid-template-columns:1fr}
-  .hero{padding-top:18px}
-  .media-card img{height: 420px}
+/* Responsive: mobile real */
+@media (max-width: 980px){
+  .hero__grid{grid-template-columns: 1fr; gap:16px}
+  .actions{gap:10px}
 }
 
-@media (max-width: 520px){
-  .topbar__inner{padding:10px 0}
-  .brand__sub{display:none}
-
-  h1{
-    font-size: 38px;
-    line-height: 1.03;
+/* Mobile iPhone/Android: botones full width y foto más alta pero controlada */
+@media (max-width: 560px){
+  .topbar__inner{padding:12px 0}
+  .btn{padding:11px 14px}
+  .btn--big{width:100%}
+  .actions{flex-direction:column}
+  .media img{
+    aspect-ratio: 4 / 5;     /* clave para que quede “premium” en celular */
+    object-position: center; /* centrada */
   }
-
-  .lead{font-size:16px}
-
-  .actions{
-    flex-direction:column;
-  }
-  .actions .btn{
-    width:100%;
-  }
-
-  .media-card img{
-    height: 420px;
-    /* en iPhone suele quedar mejor un poco más arriba */
-    object-position: center 45%;
-  }
-
-  .badge{
-    bottom: 12px;
-    padding: 11px 12px;
-  }
-  .badge .tag{padding:7px 10px}
-}
-
-@media (prefers-reduced-motion: reduce){
-  *{transition:none !important; scroll-behavior:auto !important}
+  .badge{left:12px; bottom:12px}
 }
