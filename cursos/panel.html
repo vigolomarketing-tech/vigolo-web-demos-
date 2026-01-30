@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panel Alumno (Demo) | Curso PT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html" aria-label="Volver al inicio">
+        <span class="brand__mark">PT</span>
+        <span class="brand__text">
+          <strong>CURSO PT</strong>
+          <small>PANEL ALUMNO</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación">
+        <a href="index.html">Inicio</a>
+        <a href="checkout.html">Checkout demo</a>
+        <a class="btn btn--ghost" href="index.html#planes">Planes</a>
+      </nav>
+
+      <a class="btn btn--primary topbar__cta" href="index.html">Salir</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Panel del alumno (demo)</h2>
+          <p>Así se vería el acceso al contenido. Acá van módulos, clases, PDFs, etc.</p>
+        </div>
+
+        <div class="dashboard">
+          <aside class="dash__side">
+            <div class="sidebox">
+              <div class="badge">DEMO</div>
+              <h3>Tu progreso</h3>
+              <p class="muted">Módulos desbloqueados y material disponible.</p>
+              <div class="progress">
+                <div class="progress__bar" style="width: 35%;"></div>
+              </div>
+              <div class="small muted">35% completado (ejemplo)</div>
+            </div>
+
+            <div class="sidebox">
+              <h3>Accesos</h3>
+              <ul class="bullets">
+                <li>Videos</li>
+                <li>PDFs</li>
+                <li>Evaluaciones</li>
+                <li>Certificado</li>
+              </ul>
+            </div>
+          </aside>
+
+          <section class="dash__main">
+            <div class="module">
+              <div class="module__head">
+                <h3>Módulo 1 — Bases</h3>
+                <span class="tag">Disponible</span>
+              </div>
+              <p class="muted">Introducción, objetivos, fundamentos.</p>
+              <div class="module__actions">
+                <a class="btn btn--secondary" href="#">Ver clase (demo)</a>
+                <a class="btn btn--ghost" href="#">Descargar PDF (demo)</a>
+              </div>
+            </div>
+
+            <div class="module">
+              <div class="module__head">
+                <h3>Módulo 2 — Planificación</h3>
+                <span class="tag tag--lock">Bloqueado</span>
+              </div>
+              <p class="muted">Se habilita al completar el módulo anterior (ejemplo).</p>
+              <div class="module__actions">
+                <a class="btn btn--ghost" href="#">Ver requisitos</a>
+              </div>
+            </div>
+
+            <div class="module">
+              <div class="module__head">
+                <h3>Módulo 3 — Evaluación</h3>
+                <span class="tag tag--lock">Bloqueado</span>
+              </div>
+              <p class="muted">Examen final y emisión de certificado.</p>
+              <div class="module__actions">
+                <a class="btn btn--ghost" href="#">Info del certificado</a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <p class="note">
+          * Demo visual. La versión final incluye registro real, pagos y control de acceso.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Panel Demo</span>
+        <span class="muted">Vigolo Web Studio</span>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
