@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout (Demo) | Curso PT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html" aria-label="Volver al inicio">
+        <span class="brand__mark">PT</span>
+        <span class="brand__text">
+          <strong>CURSO PT</strong>
+          <small>CHECKOUT DEMO</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación">
+        <a href="index.html#planes">Planes</a>
+        <a class="btn btn--ghost" href="panel.html">Panel demo</a>
+      </nav>
+
+      <a class="btn btn--primary topbar__cta" href="panel.html">Continuar</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Inscripción y pago (demo)</h2>
+          <p>Formulario de ejemplo. En la versión final se integra MercadoPago/Stripe.</p>
+        </div>
+
+        <div class="formgrid">
+          <div class="formcard">
+            <div class="badge">DEMO • No se cobra</div>
+
+            <label>Nombre y apellido</label>
+            <input type="text" placeholder="Ej: Juan Pérez" />
+
+            <label>Email</label>
+            <input type="email" placeholder="Ej: juan@email.com" />
+
+            <label>WhatsApp</label>
+            <input type="tel" placeholder="Ej: +54 11 1234 5678" />
+
+            <label>Plan</label>
+            <select>
+              <option>Plan Único</option>
+              <option>Plan Plus</option>
+            </select>
+
+            <div class="formactions">
+              <a class="btn btn--secondary" href="index.html">Volver</a>
+              <a class="btn btn--primary" href="panel.html">Pagar (demo) →</a>
+            </div>
+
+            <p class="small muted">
+              En la versión final: pago online + creación de cuenta + acceso automático al curso.
+            </p>
+          </div>
+
+          <aside class="sidecard">
+            <h3>Resumen</h3>
+            <div class="line"></div>
+            <p class="muted">
+              Esta pantalla simula el checkout. En producción se conecta con el proveedor de pagos y
+              se habilita el acceso solo al completar el pago.
+            </p>
+            <div class="line"></div>
+            <ul class="bullets">
+              <li>Pago con tarjeta o transferencia</li>
+              <li>Emails automáticos</li>
+              <li>Acceso inmediato</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Checkout Demo</span>
+        <span class="muted">Vigolo Web Studio</span>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
