@@ -3,257 +3,307 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Elizard Deco — Creadores de estilos. Decoración y diseño a medida. Catálogo claro, asesoramiento y WhatsApp directo. Trabajamos en Zona Sur y también Zona Norte, Oeste y CABA." />
-  <title>Elizard Deco | Creadores de estilos</title>
+  <meta name="description" content="Elizard Deco: proyectos a medida en herrería, cerramientos y decoración premium. Diseño + terminación prolija + asesoramiento. Zona Sur y alrededores." />
+  <title>Elizard Deco | Diseño a medida y terminación premium</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <!-- Topbar -->
-  <header class="topbar">
+  <header class="topbar" id="inicio">
     <div class="container topbar__inner">
       <a class="brand" href="#inicio" aria-label="Elizard Deco">
-        <!-- Logo: reemplazá el src si tenés imagen real -->
-        <div class="brand__mark" aria-hidden="true"></div>
-        <div class="brand__text">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">
           <strong>ELIZARD</strong>
           <small>DECO</small>
-        </div>
+        </span>
       </a>
 
       <nav class="nav" aria-label="Navegación principal">
         <a href="#servicios">Servicios</a>
-        <a href="#proceso">Cómo trabajamos</a>
-        <a href="#diseno-a-obra">Del diseño a la obra</a>
         <a href="#trabajos">Trabajos</a>
+        <a href="#proceso">Proceso</a>
         <a href="#resenas">Reseñas</a>
-        <a class="btn btn--ghost" href="#contacto">Contacto</a>
+        <a href="#contacto">Contacto</a>
       </nav>
 
-      <a class="btn btn--primary topbar__cta" target="_blank" rel="noopener"
-         href="https://wa.me/5491168623427?text=Hola%20Elizard%20Deco%2C%20quiero%20hacer%20una%20consulta%20por%20un%20trabajo.">
+      <a class="btn btn--primary" target="_blank" rel="noopener"
+         href="https://wa.me/5491168623427?text=Hola%20Elizard%20Deco%2C%20quiero%20cotizar%20un%20proyecto.%20%C2%BFPodemos%20hablar%3F">
         Consultar
       </a>
     </div>
   </header>
 
-  <main id="inicio">
-    <!-- HERO -->
+  <!-- Hero -->
+  <main>
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="pill">Creadores de estilos • Asesoramiento • WhatsApp directo</p>
-          <h1>Decoración y diseño a medida <span class="accent">para tu hogar o negocio</span>.</h1>
+          <p class="pill">Diseño a medida • Terminación premium • Asesoramiento</p>
+
+          <h1>
+            Decoración y diseño a medida <span class="accent">para tu hogar o negocio</span>
+          </h1>
+
           <p class="hero__subtitle">
-            Mostramos trabajos y productos de forma prolija para que el cliente entienda rápido y te consulte por WhatsApp sin vueltas.
-            <strong>Somos de Zona Sur</strong>, y realizamos trabajos en <strong>Zona Norte, Oeste, CABA</strong> y alrededores.
+            <strong>Elizard Deco</strong> — creadores de estilos.<br/>
+            Proyectos a medida con enfoque en estética, detalle y terminación premium.
+            Te asesoramos y lo ejecutamos de forma prolija, de principio a fin.
           </p>
 
           <div class="hero__actions">
             <a class="btn btn--primary" target="_blank" rel="noopener"
-               href="https://wa.me/5491168623427?text=Hola%20Elizard%20Deco%2C%20quiero%20cotizar%20un%20trabajo.%20%C2%BFC%C3%B3mo%20arrancamos%3F">
+               href="https://wa.me/5491168623427?text=Hola%20Elizard%20Deco%2C%20quiero%20cotizar%20un%20proyecto.%20%C2%BFPodemos%20hablar%3F">
               Consultar por WhatsApp
             </a>
-            <a class="btn btn--secondary" href="#servicios">Ver servicios</a>
+            <a class="btn btn--ghost" href="#servicios">Ver servicios</a>
           </div>
 
           <div class="hero__trust">
-            <div class="trust">
-              <div class="trust__title">Estética premium</div>
-              <div class="trust__desc">Terminaciones prolijas y asesoramiento</div>
+            <div class="trust-item">
+              <div class="trust-item__title">Asesoramiento real</div>
+              <div class="trust-item__desc">Te guiamos en estética y decisiones del proyecto</div>
             </div>
-            <div class="trust">
-              <div class="trust__title">Hecho a medida</div>
-              <div class="trust__desc">Diseño según tu espacio y objetivo</div>
+            <div class="trust-item">
+              <div class="trust-item__title">Terminación prolija</div>
+              <div class="trust-item__desc">Detalles cuidados para un resultado premium</div>
             </div>
-            <div class="trust">
-              <div class="trust__title">Visualización previa</div>
-              <div class="trust__desc">Render para ver el proyecto antes de hacerlo</div>
+            <div class="trust-item">
+              <div class="trust-item__title">Trabajo a medida</div>
+              <div class="trust-item__desc">Cada proyecto se adapta a tu espacio</div>
             </div>
           </div>
         </div>
 
         <div class="hero__media">
           <div class="media-card">
-            <!-- Imagen principal: poné una foto “hero” (interior/exterior premium) -->
-            <img src="img/hero.jpg" alt="Elizard Deco — decoración y diseño a medida" loading="eager" />
+            <img src="img/hero.jpg" alt="Proyecto Elizard Deco - terminación premium" loading="eager" />
             <div class="media-card__badge">
-              <strong>Catálogo claro + asesoramiento</strong>
-              <span>Consultas rápidas por WhatsApp</span>
+              <strong>Proyectos a medida</strong>
+              <span>Estética + funcionalidad</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SERVICIOS (con mini secciones) -->
-    <section id="servicios" class="section">
+    <!-- Cobertura -->
+    <section class="section section--alt" id="cobertura">
       <div class="container">
         <div class="section__head">
-          <h2>Servicios (a medida)</h2>
-          <p>Elegí lo que necesitás. Cada trabajo se adapta al espacio, estilo y presupuesto del cliente.</p>
+          <h2>Dónde trabajamos</h2>
+          <p>Base en Zona Sur. Realizamos trabajos en Zona Norte, Oeste, CABA y alrededores.</p>
         </div>
 
-        <div class="services">
-          <article class="service">
-            <h3>Pérgolas</h3>
-            <p>Diseños modernos y funcionales para exterior, con terminación premium.</p>
-            <ul class="tags">
-              <li>Diseño a medida</li><li>Exterior</li><li>Terminación prolija</li>
-            </ul>
-          </article>
-
-          <article class="service">
-            <h3>Cerramientos (hierro + vidrio)</h3>
-            <p>Soluciones elegantes para ampliar y cerrar espacios con estética y seguridad.</p>
-            <ul class="tags">
-              <li>Sistema plegable</li><li>Corredizo</li><li>Doble hoja</li>
-            </ul>
-          </article>
-
-          <article class="service">
-            <h3>Cercos premium</h3>
-            <p>Cercos con diseño, presencia y durabilidad. Ideal para frentes y perímetros.</p>
-            <ul class="tags">
-              <li>Premium</li><li>Seguridad</li><li>Diseño</li>
-            </ul>
-          </article>
-
-          <article class="service">
-            <h3>Portón corredizo + cercos</h3>
-            <p>Conjunto completo para entrada: portón corredizo y cerco a juego.</p>
-            <ul class="tags">
-              <li>Entrada</li><li>Prolijidad</li><li>Alta presencia</li>
-            </ul>
-          </article>
-
-          <article class="service">
-            <h3>Estructura de hierro + chapa decorativa</h3>
-            <p>Cerramientos con diseño (chapa decorativa). En este ítem entran también cobertores.</p>
-            <ul class="tags">
-              <li>Chapa decorativa</li><li>Cobertores</li><li>Terminación premium</li>
-            </ul>
-          </article>
-
-          <article class="service">
-            <h3>Puertas</h3>
-            <p>Puertas con estructura y estética premium, a medida del proyecto.</p>
-            <ul class="tags">
-              <li>A medida</li><li>Diseño</li><li>Calidad</li>
-            </ul>
-          </article>
-
-          <article class="service">
-            <h3>Tapa tanque</h3>
-            <p>Tapas tanque funcionales y estéticas para elevar la presencia del espacio.</p>
-            <ul class="tags">
-              <li>Funcional</li><li>Prolijo</li><li>Estético</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="cta-bar">
-          <div>
-            <h3>¿Querés que lo pensemos con tu espacio?</h3>
-            <p>Te asesoramos para que el resultado quede estético, funcional y premium.</p>
+        <div class="cards3">
+          <div class="card">
+            <h3>Zona Sur</h3>
+            <p>Base operativa y visitas sin vueltas.</p>
           </div>
-          <a class="btn btn--primary" target="_blank" rel="noopener"
-             href="https://wa.me/5491168623427?text=Hola%20Elizard%20Deco%2C%20quiero%20asesoramiento%20para%20un%20proyecto.%20%C2%BFPueden%20pasarme%20info%3F">
-            Hablar por WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CÓMO TRABAJAMOS -->
-    <section id="proceso" class="section section--alt">
-      <div class="container">
-        <div class="section__head">
-          <h2>Cómo trabajamos</h2>
-          <p>Proceso claro, asesoramiento y estética cuidada de punta a punta.</p>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <div class="step__n">1</div>
-            <h3>Consulta + idea</h3>
-            <p>Nos contás qué querés hacer y en qué espacio. Entendemos el objetivo y el estilo.</p>
+          <div class="card">
+            <h3>CABA y alrededores</h3>
+            <p>Coordinación y ejecución según proyecto.</p>
           </div>
-          <div class="step">
-            <div class="step__n">2</div>
-            <h3>Asesoramiento estético</h3>
-            <p>Proponemos opciones para que el proyecto se vea premium y combine con el entorno.</p>
-          </div>
-          <div class="step">
-            <div class="step__n">3</div>
-            <h3>Visualización (render)</h3>
-            <p>Cuando aplica, armamos un render para ver el resultado antes de construir.</p>
-          </div>
-          <div class="step">
-            <div class="step__n">4</div>
-            <h3>Ejecución + terminación</h3>
-            <p>Realizamos el trabajo cuidando detalles y terminaciones prolijas.</p>
+          <div class="card">
+            <h3>Zona Norte y Oeste</h3>
+            <p>Trabajos premium para hogares y negocios.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- DEL DISEÑO A LA OBRA (Render vs Final) -->
-    <section id="diseno-a-obra" class="section">
+    <!-- Servicios -->
+    <section class="section" id="servicios">
       <div class="container">
         <div class="section__head">
+          <h2>Servicios</h2>
+          <p>Secciones claras para que el cliente entienda rápido qué hacemos.</p>
+        </div>
+
+        <div class="service-grid">
+
+          <article class="service-card" id="pergolas">
+            <div class="service-card__top">
+              <h3>Pérgolas</h3>
+              <span class="tag">A medida</span>
+            </div>
+            <p>Diseño y ejecución con terminación prolija y estética premium.</p>
+            <div class="mini-gallery">
+              <img src="img/pergola-1.jpg" alt="Pérgola - trabajo 1" loading="lazy"/>
+              <img src="img/pergola-2.jpg" alt="Pérgola - trabajo 2" loading="lazy"/>
+              <img src="img/pergola-3.jpg" alt="Pérgola - trabajo 3" loading="lazy"/>
+            </div>
+          </article>
+
+          <article class="service-card" id="cerramientos">
+            <div class="service-card__top">
+              <h3>Cerramientos hierro y vidrio</h3>
+              <span class="tag">Premium</span>
+            </div>
+            <p>Soluciones modernas y funcionales para exterior e interior.</p>
+
+            <div class="subtags">
+              <span class="subtag">Sistema plegable corredizo</span>
+              <span class="subtag">Doble hoja</span>
+            </div>
+
+            <div class="mini-gallery">
+              <img src="img/cerramiento-1.jpg" alt="Cerramiento hierro y vidrio - trabajo 1" loading="lazy"/>
+              <img src="img/cerramiento-2.jpg" alt="Cerramiento hierro y vidrio - trabajo 2" loading="lazy"/>
+              <img src="img/cerramiento-3.jpg" alt="Cerramiento hierro y vidrio - trabajo 3" loading="lazy"/>
+            </div>
+          </article>
+
+          <article class="service-card" id="cercos">
+            <div class="service-card__top">
+              <h3>Cercos premium</h3>
+              <span class="tag">Seguridad + estética</span>
+            </div>
+            <p>Perímetros prolijos, resistentes y con look premium.</p>
+            <div class="mini-gallery">
+              <img src="img/cerco-1.jpg" alt="Cerco premium - trabajo 1" loading="lazy"/>
+              <img src="img/cerco-2.jpg" alt="Cerco premium - trabajo 2" loading="lazy"/>
+              <img src="img/cerco-3.jpg" alt="Cerco premium - trabajo 3" loading="lazy"/>
+            </div>
+          </article>
+
+          <article class="service-card" id="portones">
+            <div class="service-card__top">
+              <h3>Portón corredizo</h3>
+              <span class="tag">Funcional</span>
+            </div>
+            <p>Diseño acorde a la fachada y funcionamiento suave.</p>
+            <div class="mini-gallery">
+              <img src="img/porton-1.jpg" alt="Portón corredizo - trabajo 1" loading="lazy"/>
+              <img src="img/porton-2.jpg" alt="Portón corredizo - trabajo 2" loading="lazy"/>
+              <img src="img/porton-3.jpg" alt="Portón corredizo - trabajo 3" loading="lazy"/>
+            </div>
+          </article>
+
+          <article class="service-card" id="chapa-decorativa">
+            <div class="service-card__top">
+              <h3>Estructura + chapa decorativa</h3>
+              <span class="tag">Detalle</span>
+            </div>
+            <p>Terminación estética para elevar el look del proyecto.</p>
+            <div class="mini-gallery">
+              <img src="img/chapa-1.jpg" alt="Chapa decorativa - trabajo 1" loading="lazy"/>
+              <img src="img/chapa-2.jpg" alt="Chapa decorativa - trabajo 2" loading="lazy"/>
+              <img src="img/chapa-3.jpg" alt="Chapa decorativa - trabajo 3" loading="lazy"/>
+            </div>
+          </article>
+
+          <article class="service-card" id="cubre-tanques">
+            <div class="service-card__top">
+              <h3>Cubre tanques</h3>
+              <span class="tag">Prolijo</span>
+            </div>
+            <p>Solución estética para ocultar y ordenar el espacio.</p>
+            <div class="mini-gallery">
+              <img src="img/cubretanque-1.jpg" alt="Cubre tanque - trabajo 1" loading="lazy"/>
+              <img src="img/cubretanque-2.jpg" alt="Cubre tanque - trabajo 2" loading="lazy"/>
+              <img src="img/cubretanque-3.jpg" alt="Cubre tanque - trabajo 3" loading="lazy"/>
+            </div>
+          </article>
+
+          <article class="service-card" id="tapa-tanques">
+            <div class="service-card__top">
+              <h3>Tapa tanque</h3>
+              <span class="tag">A medida</span>
+            </div>
+            <p>Detalle final para que el conjunto se vea premium.</p>
+            <div class="mini-gallery">
+              <img src="img/tapatanque-1.jpg" alt="Tapa tanque - trabajo 1" loading="lazy"/>
+              <img src="img/tapatanque-2.jpg" alt="Tapa tanque - trabajo 2" loading="lazy"/>
+              <img src="img/tapatanque-3.jpg" alt="Tapa tanque - trabajo 3" loading="lazy"/>
+            </div>
+          </article>
+
+          <article class="service-card" id="puertas">
+            <div class="service-card__top">
+              <h3>Puertas</h3>
+              <span class="tag">Diseño</span>
+            </div>
+            <p>Diseños que acompañan el estilo del espacio.</p>
+            <div class="mini-gallery">
+              <img src="img/puerta-1.jpg" alt="Puerta - trabajo 1" loading="lazy"/>
+              <img src="img/puerta-2.jpg" alt="Puerta - trabajo 2" loading="lazy"/>
+              <img src="img/puerta-3.jpg" alt="Puerta - trabajo 3" loading="lazy"/>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="note-block">
+          <h3>Proyectos sin precios publicados</h3>
+          <p>
+            Cada trabajo se cotiza según medidas, materiales y complejidad del proyecto.
+            Si querés, escribinos por WhatsApp y te armamos una propuesta.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Del diseño a la obra -->
+    <section class="section section--alt" id="proceso">
+      <div class="container split">
+        <div class="split__text">
           <h2>Del diseño a la obra</h2>
-          <p>Visualizamos el proyecto antes de construirlo para asegurar estética, funcionalidad y coherencia con el espacio.</p>
+          <p>
+            Para que veas el nivel de detalle: primero se define el diseño del proyecto y luego se ejecuta con terminación prolija.
+            Esto ayuda a visualizar el resultado final antes de avanzar.
+          </p>
+          <ul class="checklist">
+            <li>Asesoramiento estético y funcional</li>
+            <li>Diseño previo para visualizar el proyecto</li>
+            <li>Ejecución prolija con terminación premium</li>
+          </ul>
+          <div class="split__actions">
+            <a class="btn btn--primary" target="_blank" rel="noopener"
+               href="https://wa.me/5491168623427?text=Hola%20Elizard%20Deco%2C%20quiero%20cotizar%20un%20proyecto.%20%C2%BFPodemos%20hablar%3F">
+              Pedir cotización
+            </a>
+            <a class="btn btn--ghost" href="#trabajos">Ver trabajos</a>
+          </div>
         </div>
 
-        <div class="before-after">
-          <article class="ba-card">
-            <div class="ba-card__top">
-              <h3>Diseño del proyecto</h3>
-              <p>Propuesta inicial diseñada junto al cliente para definir estilo, distribución y terminaciones.</p>
-            </div>
-            <img class="rounded" src="img/render.jpg" alt="Diseño del proyecto (visualización previa)" loading="lazy" />
-            <div class="ba-card__note">Imagen: diseño del cliente / visualización previa</div>
-          </article>
-
-          <article class="ba-card">
-            <div class="ba-card__top">
-              <h3>Trabajo realizado</h3>
-              <p>Ejecución final respetando el diseño aprobado, cuidando cada detalle y la terminación premium.</p>
-            </div>
-            <img class="rounded" src="img/resultado.jpg" alt="Trabajo realizado (resultado final)" loading="lazy" />
-            <div class="ba-card__note">Imagen: obra final (resultado)</div>
-          </article>
+        <div class="split__media">
+          <div class="compare">
+            <figure class="compare__item">
+              <img class="rounded" src="img/diseno.jpg" alt="Diseño del proyecto" loading="lazy" />
+              <figcaption>Diseño elegido por el cliente</figcaption>
+            </figure>
+            <figure class="compare__item">
+              <img class="rounded" src="img/obra.jpg" alt="Trabajo realizado por Elizard Deco" loading="lazy" />
+              <figcaption>Trabajo realizado</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- TRABAJOS / CATÁLOGO -->
-    <section id="trabajos" class="section section--alt">
+    <!-- Trabajos -->
+    <section class="section" id="trabajos">
       <div class="container">
         <div class="section__head">
-          <h2>Trabajos y catálogo</h2>
-          <p>Algunas referencias para ver estilos, terminaciones y tipos de proyectos.</p>
+          <h2>Trabajos</h2>
+          <p>Una selección de proyectos para ver el estilo y el nivel de terminación.</p>
         </div>
 
         <div class="gallery">
-          <!-- Reemplazá estas imágenes por capturas/recortes prolijos del Instagram -->
-          <figure class="gitem"><img src="img/trabajo-1.jpg" alt="Trabajo 1" loading="lazy" /></figure>
-          <figure class="gitem"><img src="img/trabajo-2.jpg" alt="Trabajo 2" loading="lazy" /></figure>
-          <figure class="gitem"><img src="img/trabajo-3.jpg" alt="Trabajo 3" loading="lazy" /></figure>
-          <figure class="gitem"><img src="img/trabajo-4.jpg" alt="Trabajo 4" loading="lazy" /></figure>
-          <figure class="gitem"><img src="img/trabajo-5.jpg" alt="Trabajo 5" loading="lazy" /></figure>
-          <figure class="gitem"><img src="img/trabajo-6.jpg" alt="Trabajo 6" loading="lazy" /></figure>
-        </div>
-
-        <div class="note">
-          * Los precios se cotizan según el proyecto y el tipo de cliente. Cada trabajo es a medida.
+          <img src="img/trabajo-1.jpg" alt="Trabajo Elizard Deco 1" loading="lazy" />
+          <img src="img/trabajo-2.jpg" alt="Trabajo Elizard Deco 2" loading="lazy" />
+          <img src="img/trabajo-3.jpg" alt="Trabajo Elizard Deco 3" loading="lazy" />
+          <img src="img/trabajo-4.jpg" alt="Trabajo Elizard Deco 4" loading="lazy" />
+          <img src="img/trabajo-5.jpg" alt="Trabajo Elizard Deco 5" loading="lazy" />
+          <img src="img/trabajo-6.jpg" alt="Trabajo Elizard Deco 6" loading="lazy" />
         </div>
       </div>
     </section>
 
-    <!-- RESEÑAS -->
-    <section id="resenas" class="section">
+    <!-- Reseñas -->
+    <section class="section section--alt" id="resenas">
       <div class="container">
         <div class="section__head">
           <h2>Reseñas</h2>
@@ -263,62 +313,41 @@
         <div class="reviews">
           <article class="review">
             <p class="review__text">“Excelente atención y terminación. Quedó prolijo y súper estético.”</p>
-            <div class="review__who">Cliente — Zona Norte</div>
+            <p class="review__meta">Cliente — Buenos Aires</p>
           </article>
           <article class="review">
-            <p class="review__text">“Se nota el asesoramiento. Nos ayudaron a elegir el estilo y quedó premium.”</p>
-            <div class="review__who">Cliente — Zona Sur</div>
+            <p class="review__text">“Cumplieron con los tiempos y el resultado quedó mejor de lo esperado.”</p>
+            <p class="review__meta">Cliente — CABA</p>
           </article>
           <article class="review">
-            <p class="review__text">“Rápidos, prolijos y con muy buena calidad. Recomendable.”</p>
-            <div class="review__who">Cliente — CABA</div>
+            <p class="review__text">“Se nota el cuidado en los detalles. Recomendable.”</p>
+            <p class="review__meta">Cliente — Zona Norte</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ZONAS -->
-    <section class="section section--alt">
-      <div class="container zones">
-        <div class="zones__card">
-          <h2>Zona Sur + trabajos en toda la provincia y CABA</h2>
-          <p>
-            Somos de <strong>Zona Sur</strong>, y realizamos trabajos en <strong>Zona Norte</strong>, <strong>Zona Oeste</strong>,
-            <strong>CABA</strong> y alrededores. Coordinamos según el proyecto.
-          </p>
-          <ul class="checklist">
-            <li>Asesoramiento estético para que quede premium</li>
-            <li>Trabajo a medida (no genérico)</li>
-            <li>Terminación prolija y cuidada</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="section contact">
+    <!-- Contacto -->
+    <section class="section contact" id="contacto">
       <div class="container contact__grid">
         <div class="contact__card">
           <h2>¿Querés cotizar tu proyecto?</h2>
           <p>
-            Contanos qué querés hacer y en qué espacio. Te asesoramos para lograr un resultado estético, funcional y premium.
+            Contanos qué necesitás (medidas, ubicación y fotos del espacio si tenés).
+            Te respondemos por WhatsApp y te guiamos con asesoramiento.
           </p>
 
           <div class="contact__actions">
             <a class="btn btn--primary" target="_blank" rel="noopener"
-               href="https://wa.me/5491168623427?text=Hola%20Elizard%20Deco%2C%20quiero%20cotizar%20un%20proyecto.%20%C2%BFMe%20pasan%20info%3F">
-              WhatsApp: +54 9 11 6862-3427
-            </a>
-
-            <!-- Si querés mail, lo agregamos después -->
-            <a class="btn btn--secondary" href="#servicios">
-              Ver servicios
+               href="https://wa.me/5491168623427?text=Hola%20Elizard%20Deco%2C%20quiero%20cotizar%20un%20proyecto.%20%C2%BFPodemos%20hablar%3F">
+              WhatsApp: +54 9 11 6862 3427
             </a>
           </div>
 
-          <div class="contact__mini">
-            <span class="dot"></span>
-            <span>Respuesta rápida por WhatsApp</span>
+          <div class="contact__chips">
+            <span class="chip">Asesoramiento</span>
+            <span class="chip">A medida</span>
+            <span class="chip">Terminación premium</span>
           </div>
         </div>
       </div>
@@ -327,10 +356,17 @@
     <footer class="footer">
       <div class="container footer__inner">
         <span>© <span id="year"></span> Elizard Deco</span>
-        <span class="muted">Creadores de estilos</span>
+        <span class="muted">Diseño a medida • Terminación premium</span>
       </div>
     </footer>
   </main>
+
+  <!-- Sticky WhatsApp -->
+  <a class="wa-fab" target="_blank" rel="noopener"
+     href="https://wa.me/5491168623427?text=Hola%20Elizard%20Deco%2C%20quiero%20cotizar%20un%20proyecto.%20%C2%BFPodemos%20hablar%3F"
+     aria-label="Consultar por WhatsApp">
+    WhatsApp
+  </a>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
