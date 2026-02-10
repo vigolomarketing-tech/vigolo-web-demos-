@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Elizard Deco | Catálogo + WhatsApp</title>
-  <meta name="description" content="Elizard Deco. Diseño y decoración a medida. Catálogo claro + contacto directo por WhatsApp." />
+  <meta name="description" content="Elizard Deco — Creadores de estilos. Decoración y diseño a medida. Catálogo claro, asesoramiento y WhatsApp directo. Trabajamos en Zona Sur y también Zona Norte, Oeste y CABA." />
+  <title>Elizard Deco | Creadores de estilos</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -13,210 +13,312 @@
   <header class="topbar">
     <div class="container topbar__inner">
       <a class="brand" href="#inicio" aria-label="Elizard Deco">
-        <span class="brand__mark" aria-hidden="true"></span>
-        <span class="brand__text">
+        <!-- Logo: reemplazá el src si tenés imagen real -->
+        <div class="brand__mark" aria-hidden="true"></div>
+        <div class="brand__text">
           <strong>ELIZARD</strong>
           <small>DECO</small>
-        </span>
+        </div>
       </a>
 
-      <nav class="nav" aria-label="Navegación">
-        <a href="#catalogo">Catálogo</a>
-        <a href="#como">Cómo trabajamos</a>
-        <a href="#contacto" class="btn btn--ghost">Contacto</a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#diseno-a-obra">Del diseño a la obra</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#resenas">Reseñas</a>
+        <a class="btn btn--ghost" href="#contacto">Contacto</a>
       </nav>
 
       <a class="btn btn--primary topbar__cta" target="_blank" rel="noopener"
-         href="https://wa.me/5491100000000?text=Hola%20Elizard%20Deco%2C%20quiero%20consultar%20por%20un%20trabajo%20a%20medida.">
+         href="https://wa.me/5491168623427?text=Hola%20Elizard%20Deco%2C%20quiero%20hacer%20una%20consulta%20por%20un%20trabajo.">
         Consultar
       </a>
     </div>
   </header>
 
-  <!-- Hero -->
   <main id="inicio">
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="pill">Catálogo claro • Respuesta rápida • WhatsApp directo</p>
-
-          <h1>Decoración y diseño <span class="accent">a medida</span><br/>para tu hogar o negocio.</h1>
-
+          <p class="pill">Creadores de estilos • Asesoramiento • WhatsApp directo</p>
+          <h1>Decoración y diseño a medida <span class="accent">para tu hogar o negocio</span>.</h1>
           <p class="hero__subtitle">
-            Mostramos trabajos y productos de forma prolija para que el cliente entienda rápido y
-            te consulte por WhatsApp sin vueltas.
+            Mostramos trabajos y productos de forma prolija para que el cliente entienda rápido y te consulte por WhatsApp sin vueltas.
+            <strong>Somos de Zona Sur</strong>, y realizamos trabajos en <strong>Zona Norte, Oeste, CABA</strong> y alrededores.
           </p>
 
           <div class="hero__actions">
             <a class="btn btn--primary" target="_blank" rel="noopener"
-               href="https://wa.me/5491100000000?text=Hola%20Elizard%20Deco%2C%20quiero%20consultar%20por%20un%20trabajo%20a%20medida.">
+               href="https://wa.me/5491168623427?text=Hola%20Elizard%20Deco%2C%20quiero%20cotizar%20un%20trabajo.%20%C2%BFC%C3%B3mo%20arrancamos%3F">
               Consultar por WhatsApp
             </a>
-            <a class="btn btn--secondary" href="#catalogo">Ver catálogo</a>
+            <a class="btn btn--secondary" href="#servicios">Ver servicios</a>
           </div>
 
-          <ul class="checks" aria-label="Beneficios">
-            <li>Diseños personalizados</li>
-            <li>Terminación prolija y premium</li>
-            <li>Ideal para Instagram + WhatsApp</li>
-          </ul>
-
-          <div class="stats">
-            <div class="stat">
-              <div class="stat__t">A medida</div>
-              <div class="stat__d">Diseño según tu espacio</div>
+          <div class="hero__trust">
+            <div class="trust">
+              <div class="trust__title">Estética premium</div>
+              <div class="trust__desc">Terminaciones prolijas y asesoramiento</div>
             </div>
-            <div class="stat">
-              <div class="stat__t">Calidad</div>
-              <div class="stat__d">Materiales y detalle</div>
+            <div class="trust">
+              <div class="trust__title">Hecho a medida</div>
+              <div class="trust__desc">Diseño según tu espacio y objetivo</div>
             </div>
-            <div class="stat">
-              <div class="stat__t">Respuesta</div>
-              <div class="stat__d">WhatsApp directo</div>
+            <div class="trust">
+              <div class="trust__title">Visualización previa</div>
+              <div class="trust__desc">Render para ver el proyecto antes de hacerlo</div>
             </div>
           </div>
         </div>
 
         <div class="hero__media">
-          <div class="media">
-            <!-- Imágenes embebidas por URL (no subís nada) -->
-            <img
-              src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1400&q=80"
-              alt="Interior moderno con decoración minimalista"
-              loading="eager"
-              referrerpolicy="no-referrer"
-            />
-            <div class="badge">
-              <strong>Elizard Deco</strong>
-              <span>Catálogo + WhatsApp</span>
+          <div class="media-card">
+            <!-- Imagen principal: poné una foto “hero” (interior/exterior premium) -->
+            <img src="img/hero.jpg" alt="Elizard Deco — decoración y diseño a medida" loading="eager" />
+            <div class="media-card__badge">
+              <strong>Catálogo claro + asesoramiento</strong>
+              <span>Consultas rápidas por WhatsApp</span>
             </div>
-          </div>
-
-          <div class="thumbs" aria-hidden="true">
-            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80"
-                 alt="" loading="lazy" referrerpolicy="no-referrer" />
-            <img src="https://images.unsplash.com/photo-1539922631499-09155cc609a4?auto=format&fit=crop&w=900&q=80"
-                 alt="" loading="lazy" referrerpolicy="no-referrer" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Catálogo -->
-    <section id="catalogo" class="section">
+    <!-- SERVICIOS (con mini secciones) -->
+    <section id="servicios" class="section">
       <div class="container">
         <div class="section__head">
-          <h2>Catálogo / Trabajos</h2>
-          <p>Ejemplos de estilo. Se adapta con tus fotos reales y tus productos.</p>
+          <h2>Servicios (a medida)</h2>
+          <p>Elegí lo que necesitás. Cada trabajo se adapta al espacio, estilo y presupuesto del cliente.</p>
         </div>
 
-        <div class="grid">
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80"
-                 alt="Decoración en interior moderno" loading="lazy" referrerpolicy="no-referrer" />
-            <div class="card__body">
-              <h3>Decoración premium</h3>
-              <p>Detalles que elevan el espacio y se ven “caros” en fotos.</p>
-            </div>
+        <div class="services">
+          <article class="service">
+            <h3>Pérgolas</h3>
+            <p>Diseños modernos y funcionales para exterior, con terminación premium.</p>
+            <ul class="tags">
+              <li>Diseño a medida</li><li>Exterior</li><li>Terminación prolija</li>
+            </ul>
           </article>
 
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80"
-                 alt="Living minimalista moderno" loading="lazy" referrerpolicy="no-referrer" />
-            <div class="card__body">
-              <h3>Estilo minimal</h3>
-              <p>Líneas limpias, tonos neutros y composición prolija.</p>
-            </div>
+          <article class="service">
+            <h3>Cerramientos (hierro + vidrio)</h3>
+            <p>Soluciones elegantes para ampliar y cerrar espacios con estética y seguridad.</p>
+            <ul class="tags">
+              <li>Sistema plegable</li><li>Corredizo</li><li>Doble hoja</li>
+            </ul>
           </article>
 
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=1200&q=80"
-                 alt="Ambiente moderno con decoración" loading="lazy" referrerpolicy="no-referrer" />
-            <div class="card__body">
-              <h3>Diseño a medida</h3>
-              <p>Hecho según tu necesidad: tamaño, colores y terminación.</p>
-            </div>
+          <article class="service">
+            <h3>Cercos premium</h3>
+            <p>Cercos con diseño, presencia y durabilidad. Ideal para frentes y perímetros.</p>
+            <ul class="tags">
+              <li>Premium</li><li>Seguridad</li><li>Diseño</li>
+            </ul>
           </article>
 
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=1200&q=80"
-                 alt="Interior elegante contemporáneo" loading="lazy" referrerpolicy="no-referrer" />
-            <div class="card__body">
-              <h3>Para casa o negocio</h3>
-              <p>Funciona perfecto para clientes finales y comercios.</p>
-            </div>
+          <article class="service">
+            <h3>Portón corredizo + cercos</h3>
+            <p>Conjunto completo para entrada: portón corredizo y cerco a juego.</p>
+            <ul class="tags">
+              <li>Entrada</li><li>Prolijidad</li><li>Alta presencia</li>
+            </ul>
           </article>
 
-          <article class="card card--wide">
-            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80"
-                 alt="Detalle de interior moderno" loading="lazy" referrerpolicy="no-referrer" />
-            <div class="card__body">
-              <h3>Entrega y coordinación</h3>
-              <p>Mostramos tiempos estimados, zonas y cómo se coordina el pedido por WhatsApp.</p>
-            </div>
+          <article class="service">
+            <h3>Estructura de hierro + chapa decorativa</h3>
+            <p>Cerramientos con diseño (chapa decorativa). En este ítem entran también cobertores.</p>
+            <ul class="tags">
+              <li>Chapa decorativa</li><li>Cobertores</li><li>Terminación premium</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <h3>Puertas</h3>
+            <p>Puertas con estructura y estética premium, a medida del proyecto.</p>
+            <ul class="tags">
+              <li>A medida</li><li>Diseño</li><li>Calidad</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <h3>Tapa tanque</h3>
+            <p>Tapas tanque funcionales y estéticas para elevar la presencia del espacio.</p>
+            <ul class="tags">
+              <li>Funcional</li><li>Prolijo</li><li>Estético</li>
+            </ul>
           </article>
         </div>
 
-        <div class="cta">
-          <div class="cta__text">
-            <h3>¿Querés cotizar algo a medida?</h3>
-            <p>Mandanos una foto/medidas y te respondemos por WhatsApp.</p>
+        <div class="cta-bar">
+          <div>
+            <h3>¿Querés que lo pensemos con tu espacio?</h3>
+            <p>Te asesoramos para que el resultado quede estético, funcional y premium.</p>
           </div>
           <a class="btn btn--primary" target="_blank" rel="noopener"
-             href="https://wa.me/5491100000000?text=Hola%20Elizard%20Deco%2C%20quiero%20cotizar%20un%20producto%20a%20medida.%20Te%20paso%20foto%20y%20medidas.">
-            Pedir cotización
+             href="https://wa.me/5491168623427?text=Hola%20Elizard%20Deco%2C%20quiero%20asesoramiento%20para%20un%20proyecto.%20%C2%BFPueden%20pasarme%20info%3F">
+            Hablar por WhatsApp
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Cómo trabajamos -->
-    <section id="como" class="section section--alt">
+    <!-- CÓMO TRABAJAMOS -->
+    <section id="proceso" class="section section--alt">
       <div class="container">
         <div class="section__head">
           <h2>Cómo trabajamos</h2>
-          <p>Simple, rápido y claro. Así se cierra más.</p>
+          <p>Proceso claro, asesoramiento y estética cuidada de punta a punta.</p>
         </div>
 
         <div class="steps">
           <div class="step">
             <div class="step__n">1</div>
-            <h3>Nos escribís</h3>
-            <p>WhatsApp con foto + medidas + lo que buscás.</p>
+            <h3>Consulta + idea</h3>
+            <p>Nos contás qué querés hacer y en qué espacio. Entendemos el objetivo y el estilo.</p>
           </div>
           <div class="step">
             <div class="step__n">2</div>
-            <h3>Propuesta</h3>
-            <p>Te pasamos opciones, precio estimado y tiempos.</p>
+            <h3>Asesoramiento estético</h3>
+            <p>Proponemos opciones para que el proyecto se vea premium y combine con el entorno.</p>
           </div>
           <div class="step">
             <div class="step__n">3</div>
-            <h3>Producción</h3>
-            <p>Armamos el diseño con terminación prolija.</p>
+            <h3>Visualización (render)</h3>
+            <p>Cuando aplica, armamos un render para ver el resultado antes de construir.</p>
           </div>
           <div class="step">
             <div class="step__n">4</div>
-            <h3>Entrega</h3>
-            <p>Coordinamos entrega/retiro y listo.</p>
+            <h3>Ejecución + terminación</h3>
+            <p>Realizamos el trabajo cuidando detalles y terminaciones prolijas.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="section">
+    <!-- DEL DISEÑO A LA OBRA (Render vs Final) -->
+    <section id="diseno-a-obra" class="section">
       <div class="container">
-        <div class="final">
-          <div class="final__left">
-            <h2>Elizard Deco</h2>
-            <p class="muted">Demo catálogo + WhatsApp • Estilo premium y minimal.</p>
-          </div>
-          <div class="final__right">
+        <div class="section__head">
+          <h2>Del diseño a la obra</h2>
+          <p>Visualizamos el proyecto antes de construirlo para asegurar estética, funcionalidad y coherencia con el espacio.</p>
+        </div>
+
+        <div class="before-after">
+          <article class="ba-card">
+            <div class="ba-card__top">
+              <h3>Diseño del proyecto</h3>
+              <p>Propuesta inicial diseñada junto al cliente para definir estilo, distribución y terminaciones.</p>
+            </div>
+            <img class="rounded" src="img/render.jpg" alt="Diseño del proyecto (visualización previa)" loading="lazy" />
+            <div class="ba-card__note">Imagen: diseño del cliente / visualización previa</div>
+          </article>
+
+          <article class="ba-card">
+            <div class="ba-card__top">
+              <h3>Trabajo realizado</h3>
+              <p>Ejecución final respetando el diseño aprobado, cuidando cada detalle y la terminación premium.</p>
+            </div>
+            <img class="rounded" src="img/resultado.jpg" alt="Trabajo realizado (resultado final)" loading="lazy" />
+            <div class="ba-card__note">Imagen: obra final (resultado)</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRABAJOS / CATÁLOGO -->
+    <section id="trabajos" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Trabajos y catálogo</h2>
+          <p>Algunas referencias para ver estilos, terminaciones y tipos de proyectos.</p>
+        </div>
+
+        <div class="gallery">
+          <!-- Reemplazá estas imágenes por capturas/recortes prolijos del Instagram -->
+          <figure class="gitem"><img src="img/trabajo-1.jpg" alt="Trabajo 1" loading="lazy" /></figure>
+          <figure class="gitem"><img src="img/trabajo-2.jpg" alt="Trabajo 2" loading="lazy" /></figure>
+          <figure class="gitem"><img src="img/trabajo-3.jpg" alt="Trabajo 3" loading="lazy" /></figure>
+          <figure class="gitem"><img src="img/trabajo-4.jpg" alt="Trabajo 4" loading="lazy" /></figure>
+          <figure class="gitem"><img src="img/trabajo-5.jpg" alt="Trabajo 5" loading="lazy" /></figure>
+          <figure class="gitem"><img src="img/trabajo-6.jpg" alt="Trabajo 6" loading="lazy" /></figure>
+        </div>
+
+        <div class="note">
+          * Los precios se cotizan según el proyecto y el tipo de cliente. Cada trabajo es a medida.
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section id="resenas" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Reseñas</h2>
+          <p>La experiencia del cliente es parte del trabajo: asesoramiento, estética y terminación prolija.</p>
+        </div>
+
+        <div class="reviews">
+          <article class="review">
+            <p class="review__text">“Excelente atención y terminación. Quedó prolijo y súper estético.”</p>
+            <div class="review__who">Cliente — Zona Norte</div>
+          </article>
+          <article class="review">
+            <p class="review__text">“Se nota el asesoramiento. Nos ayudaron a elegir el estilo y quedó premium.”</p>
+            <div class="review__who">Cliente — Zona Sur</div>
+          </article>
+          <article class="review">
+            <p class="review__text">“Rápidos, prolijos y con muy buena calidad. Recomendable.”</p>
+            <div class="review__who">Cliente — CABA</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZONAS -->
+    <section class="section section--alt">
+      <div class="container zones">
+        <div class="zones__card">
+          <h2>Zona Sur + trabajos en toda la provincia y CABA</h2>
+          <p>
+            Somos de <strong>Zona Sur</strong>, y realizamos trabajos en <strong>Zona Norte</strong>, <strong>Zona Oeste</strong>,
+            <strong>CABA</strong> y alrededores. Coordinamos según el proyecto.
+          </p>
+          <ul class="checklist">
+            <li>Asesoramiento estético para que quede premium</li>
+            <li>Trabajo a medida (no genérico)</li>
+            <li>Terminación prolija y cuidada</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact">
+      <div class="container contact__grid">
+        <div class="contact__card">
+          <h2>¿Querés cotizar tu proyecto?</h2>
+          <p>
+            Contanos qué querés hacer y en qué espacio. Te asesoramos para lograr un resultado estético, funcional y premium.
+          </p>
+
+          <div class="contact__actions">
             <a class="btn btn--primary" target="_blank" rel="noopener"
-               href="https://wa.me/5491100000000?text=Hola%20Elizard%20Deco%2C%20quiero%20consultar%20por%20un%20trabajo%20a%20medida.">
-              Hablar por WhatsApp
+               href="https://wa.me/5491168623427?text=Hola%20Elizard%20Deco%2C%20quiero%20cotizar%20un%20proyecto.%20%C2%BFMe%20pasan%20info%3F">
+              WhatsApp: +54 9 11 6862-3427
             </a>
-            <a class="btn btn--ghost" href="#inicio">Volver arriba</a>
+
+            <!-- Si querés mail, lo agregamos después -->
+            <a class="btn btn--secondary" href="#servicios">
+              Ver servicios
+            </a>
+          </div>
+
+          <div class="contact__mini">
+            <span class="dot"></span>
+            <span>Respuesta rápida por WhatsApp</span>
           </div>
         </div>
       </div>
@@ -224,10 +326,14 @@
 
     <footer class="footer">
       <div class="container footer__inner">
-        <span>Demo creada por <strong>Vigolo Web Studio</strong></span>
-        <span class="muted">Catálogo + WhatsApp</span>
+        <span>© <span id="year"></span> Elizard Deco</span>
+        <span class="muted">Creadores de estilos</span>
       </div>
     </footer>
   </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
