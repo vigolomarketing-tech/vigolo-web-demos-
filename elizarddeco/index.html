@@ -60,20 +60,9 @@
               <a class="btn btn--ghost" href="#servicios">Ver servicios</a>
             </div>
 
-            <div class="hero__trust">
-              <div class="trust-item">
-                <div class="trust-item__title">Creadores de estilos</div>
-                <div class="trust-item__desc">Propuestas alineadas a tu espacio, tu objetivo y tu estética.</div>
-              </div>
-              <div class="trust-item">
-                <div class="trust-item__title">Asesoramiento real</div>
-                <div class="trust-item__desc">Te guiamos para definir materiales, detalles y terminaciones.</div>
-              </div>
-              <div class="trust-item">
-                <div class="trust-item__title">Ejecución prolija</div>
-                <div class="trust-item__desc">Calidad y presentación premium en cada entrega.</div>
-              </div>
-            </div>
+            <p class="hero__note">
+              Trabajos en <strong>Zona Sur</strong> y también en <strong>Zona Norte, Oeste, CABA</strong> y alrededores.
+            </p>
           </div>
 
           <div class="hero__media">
@@ -87,6 +76,31 @@
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- Diferenciales (los 3 cards bajan a sección aparte) -->
+    <section class="section" id="diferenciales">
+      <div class="container">
+        <div class="section__head">
+          <h2>Por qué Elizard Deco</h2>
+          <p>Estética, asesoramiento y ejecución prolija: una experiencia premium de principio a fin.</p>
+        </div>
+
+        <div class="cards3">
+          <article class="card">
+            <h3>Creadores de estilos</h3>
+            <p>Propuestas alineadas a tu espacio, tu objetivo y la estética del lugar.</p>
+          </article>
+          <article class="card">
+            <h3>Asesoramiento real</h3>
+            <p>Guía en materiales, detalles, terminaciones y diseño para que quede impecable.</p>
+          </article>
+          <article class="card">
+            <h3>Ejecución prolija</h3>
+            <p>Calidad de obra + presentación premium en cada entrega.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -254,13 +268,11 @@
 
           <div class="compare">
             <figure class="rounded compare__item">
-              <!-- Render (el único que te mandó) -->
               <img src="img/proceso/render.jpg" alt="Diseño / referencia del proyecto" loading="lazy">
               <figcaption>Diseño / referencia del proyecto (visualización previa)</figcaption>
             </figure>
 
             <figure class="rounded compare__item">
-              <!-- Obra terminada -->
               <img src="img/proceso/obra.jpg" alt="Trabajo realizado por Elizard Deco" loading="lazy">
               <figcaption>Trabajo realizado (terminación y estética final)</figcaption>
             </figure>
@@ -269,19 +281,15 @@
       </div>
     </section>
 
-    <!-- Reseñas (solo si son reales) -->
-    <section class="section" id="resenas">
+    <!-- Reseñas (OCULTA hasta que pegues reseñas reales) -->
+    <section class="section is-hidden" id="resenas">
       <div class="container">
         <div class="section__head">
           <h2>Reseñas</h2>
-          <p>Podemos agregar reseñas reales (Google) para reforzar confianza. Sin inventar.</p>
+          <p>Reseñas reales de clientes (Google). Cuando Guille te pase las reseñas, las pegás acá.</p>
         </div>
 
         <div class="reviews">
-          <!-- PEGAR RESEÑAS REALES ACÁ.
-               Si todavía no te las pasa, ocultá toda la sección agregando:
-               style="display:none" en <section id="resenas"> o borrala por ahora.
-          -->
           <article class="review">
             <p class="review__text">“(Pegar reseña real de Google acá)”</p>
             <p class="review__meta">Nombre • Zona</p>
@@ -341,6 +349,27 @@
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Fallback prolijo si faltan imágenes (evita ícono roto)
+    const placeholder = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
+      <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0b0c10"/>
+            <stop offset="1" stop-color="#14161c"/>
+          </linearGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#g)"/>
+        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+          font-family="Arial" font-size="34" fill="rgba(255,255,255,0.45)">
+          Imagen pendiente
+        </text>
+      </svg>
+    `)}`;
+
+    document.querySelectorAll("img").forEach(img => {
+      img.addEventListener("error", () => { img.src = placeholder; });
+    });
   </script>
 </body>
 </html>
