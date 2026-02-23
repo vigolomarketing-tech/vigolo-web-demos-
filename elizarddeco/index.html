@@ -15,10 +15,7 @@
       <div class="topbar__inner">
         <a class="brand" href="#inicio" aria-label="Elizard Deco - Inicio">
           <span class="brand__mark" aria-hidden="true"></span>
-          <span class="brand__text">
-            <strong>ELIZARD</strong>
-            <small>DECO</small>
-          </span>
+          <span class="brand__text brand__text--single">ELIZARDDECO</span>
         </a>
 
         <nav class="nav" aria-label="Navegación principal">
@@ -48,12 +45,10 @@
               para tu Hogar o Negocio.
             </h1>
 
-            <!-- ✅ Copy nuevo de Guille -->
             <p class="hero__subtitle">
               Diseño y fabricación a medida en hierro y estructuras premium para hogares y comercios.
             </p>
 
-            <!-- ✅ 3 bullets nuevos de Guille (alto valor / simple / pro) -->
             <ul class="hero__bullets" aria-label="Beneficios principales">
               <li>Trabajos a medida, sin piezas estándar</li>
               <li>Instalación incluida</li>
@@ -70,7 +65,6 @@
 
           <div class="hero__media">
             <div class="media-card">
-              <!-- Reemplazar por una imagen fuerte de trabajo terminado -->
               <img src="img/hero.jpg" alt="Proyecto Elizard Deco" loading="lazy" />
               <div class="media-card__badge">
                 <strong>Elizard Deco</strong>
@@ -83,7 +77,7 @@
       </div>
     </section>
 
-    <!-- Diferenciales (los 3 cards bajan a sección aparte) -->
+    <!-- Diferenciales -->
     <section class="section" id="diferenciales">
       <div class="container">
         <div class="section__head">
@@ -127,7 +121,7 @@
             <div class="subtags">
               <span class="subtag">Diseño</span><span class="subtag">Medición</span><span class="subtag">Instalación</span>
             </div>
-            <div class="mini-gallery">
+            <div class="mini-gallery js-lightbox">
               <img src="img/servicios/pergolas-1.jpg" alt="Pérgola - ejemplo 1" loading="lazy">
               <img src="img/servicios/pergolas-2.jpg" alt="Pérgola - ejemplo 2" loading="lazy">
               <img src="img/servicios/pergolas-3.jpg" alt="Pérgola - ejemplo 3" loading="lazy">
@@ -144,7 +138,7 @@
             <div class="subtags">
               <span class="subtag">Plegable</span><span class="subtag">Corredizo</span><span class="subtag">Doble Hoja</span>
             </div>
-            <div class="mini-gallery">
+            <div class="mini-gallery js-lightbox">
               <img src="img/servicios/cerramientos-1.jpg" alt="Cerramiento - ejemplo 1" loading="lazy">
               <img src="img/servicios/cerramientos-2.jpg" alt="Cerramiento - ejemplo 2" loading="lazy">
               <img src="img/servicios/cerramientos-3.jpg" alt="Cerramiento - ejemplo 3" loading="lazy">
@@ -161,7 +155,7 @@
             <div class="subtags">
               <span class="subtag">Diseño</span><span class="subtag">Terminación</span><span class="subtag">Instalación</span>
             </div>
-            <div class="mini-gallery">
+            <div class="mini-gallery js-lightbox">
               <img src="img/servicios/cercos-1.jpg" alt="Cerco - ejemplo 1" loading="lazy">
               <img src="img/servicios/cercos-2.jpg" alt="Cerco - ejemplo 2" loading="lazy">
               <img src="img/servicios/cercos-3.jpg" alt="Cerco - ejemplo 3" loading="lazy">
@@ -178,7 +172,7 @@
             <div class="subtags">
               <span class="subtag">Corredizo</span><span class="subtag">Estructura</span><span class="subtag">Detalle</span>
             </div>
-            <div class="mini-gallery">
+            <div class="mini-gallery js-lightbox">
               <img src="img/servicios/portones-1.jpg" alt="Portón - ejemplo 1" loading="lazy">
               <img src="img/servicios/portones-2.jpg" alt="Portón - ejemplo 2" loading="lazy">
               <img src="img/servicios/portones-3.jpg" alt="Portón - ejemplo 3" loading="lazy">
@@ -195,7 +189,7 @@
             <div class="subtags">
               <span class="subtag">Chapa</span><span class="subtag">Hierro</span><span class="subtag">Terminación</span>
             </div>
-            <div class="mini-gallery">
+            <div class="mini-gallery js-lightbox">
               <img src="img/servicios/chapa-1.jpg" alt="Chapa decorativa - ejemplo 1" loading="lazy">
               <img src="img/servicios/chapa-2.jpg" alt="Chapa decorativa - ejemplo 2" loading="lazy">
               <img src="img/servicios/chapa-3.jpg" alt="Chapa decorativa - ejemplo 3" loading="lazy">
@@ -205,16 +199,16 @@
           <!-- 6 -->
           <article class="service-card">
             <div class="service-card__top">
-              <h3>Cubre Tanque / Tapa Tanque / Puertas</h3>
+              <h3>Cobertor de Aire Acondicionado + Puertas</h3>
               <span class="tag">Detalle</span>
             </div>
             <p>Soluciones puntuales para ordenar el espacio y levantar la estética.</p>
             <div class="subtags">
-              <span class="subtag">Cubre Tanque</span><span class="subtag">Tapa Tanque</span><span class="subtag">Puertas</span>
+              <span class="subtag">Cobertor AC</span><span class="subtag">Diseño</span><span class="subtag">Puertas</span>
             </div>
-            <div class="mini-gallery">
-              <img src="img/servicios/tapatanque-1.jpg" alt="Tapa tanque - ejemplo 1" loading="lazy">
-              <img src="img/servicios/tapatanque-2.jpg" alt="Tapa tanque - ejemplo 2" loading="lazy">
+            <div class="mini-gallery js-lightbox">
+              <img src="img/servicios/cobertor-ac-1.jpg" alt="Cobertor de aire acondicionado - ejemplo 1" loading="lazy">
+              <img src="img/servicios/cobertor-ac-2.jpg" alt="Cobertor de aire acondicionado - ejemplo 2" loading="lazy">
               <img src="img/servicios/puertas-1.jpg" alt="Puerta - ejemplo 1" loading="lazy">
             </div>
           </article>
@@ -350,6 +344,16 @@
     WhatsApp
   </a>
 
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__backdrop" data-close="1"></div>
+    <figure class="lightbox__content" role="dialog" aria-modal="true" aria-label="Vista ampliada">
+      <button class="lightbox__close" type="button" aria-label="Cerrar" data-close="1">✕</button>
+      <img class="lightbox__img" id="lightboxImg" alt="">
+      <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
 
@@ -373,6 +377,51 @@
     document.querySelectorAll("img").forEach(img => {
       img.addEventListener("error", () => { img.src = placeholder; });
     });
+
+    // Lightbox
+    (function () {
+      const box = document.getElementById('lightbox');
+      const imgEl = document.getElementById('lightboxImg');
+      const capEl = document.getElementById('lightboxCaption');
+
+      function openLightbox(src, alt) {
+        imgEl.src = src;
+        imgEl.alt = alt || 'Imagen ampliada';
+        capEl.textContent = alt || '';
+        box.classList.add('is-open');
+        box.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('is-lock');
+      }
+
+      function closeLightbox() {
+        box.classList.remove('is-open');
+        box.setAttribute('aria-hidden', 'true');
+        imgEl.src = '';
+        capEl.textContent = '';
+        document.body.classList.remove('is-lock');
+      }
+
+      // Click en imágenes (Servicios)
+      document.querySelectorAll('.js-lightbox img').forEach((img) => {
+        img.style.cursor = 'zoom-in';
+        img.setAttribute('tabindex', '0');
+
+        img.addEventListener('click', () => openLightbox(img.src, img.alt));
+        img.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') openLightbox(img.src, img.alt);
+        });
+      });
+
+      // Cerrar por click backdrop/botón
+      box.addEventListener('click', (e) => {
+        if (e.target && e.target.dataset && e.target.dataset.close) closeLightbox();
+      });
+
+      // Cerrar con ESC
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && box.classList.contains('is-open')) closeLightbox();
+      });
+    })();
   </script>
 </body>
 </html>
