@@ -15,7 +15,10 @@
       <div class="topbar__inner">
         <a class="brand" href="#inicio" aria-label="Elizard Deco - Inicio">
           <span class="brand__mark" aria-hidden="true"></span>
-          <span class="brand__text brand__text--single">ELIZARDDECO</span>
+          <span class="brand__text">
+            <strong>ELIZARD</strong>
+            <small>DECO</small>
+          </span>
         </a>
 
         <nav class="nav" aria-label="Navegación principal">
@@ -111,7 +114,7 @@
         </div>
 
         <div class="service-grid">
-          <!-- 1 -->
+          <!-- 1 - Pérgolas -->
           <article class="service-card">
             <div class="service-card__top">
               <h3>Pérgolas</h3>
@@ -121,14 +124,31 @@
             <div class="subtags">
               <span class="subtag">Diseño</span><span class="subtag">Medición</span><span class="subtag">Instalación</span>
             </div>
-            <div class="mini-gallery js-lightbox">
-              <img src="img/servicios/pergolas-1.jpg" alt="Pérgola - ejemplo 1" loading="lazy">
-              <img src="img/servicios/pergolas-2.jpg" alt="Pérgola - ejemplo 2" loading="lazy">
-              <img src="img/servicios/pergolas-3.jpg" alt="Pérgola - ejemplo 3" loading="lazy">
+            <div class="mini-gallery" aria-label="Galería de pérgolas">
+              <img class="lb-item" data-group="svc-pergolas" src="img/servicios/pergolas-1.jpg" alt="Pérgola - ejemplo 1" loading="lazy">
+              <img class="lb-item" data-group="svc-pergolas" src="img/servicios/pergolas-2.jpg" alt="Pérgola - ejemplo 2" loading="lazy">
+              <img class="lb-item" data-group="svc-pergolas" src="img/servicios/pergolas-3.jpg" alt="Pérgola - ejemplo 3" loading="lazy">
             </div>
           </article>
 
-          <!-- 2 -->
+          <!-- 2 - Cubre tanque / puertas / A/A -->
+          <article class="service-card">
+            <div class="service-card__top">
+              <h3>Cubre Tanque • Puertas • Cobertor A/A</h3>
+              <span class="tag">Detalle</span>
+            </div>
+            <p>Soluciones puntuales para ordenar el espacio y levantar la estética.</p>
+            <div class="subtags">
+              <span class="subtag">Exterior</span><span class="subtag">Diseño</span><span class="subtag">Terminación</span>
+            </div>
+            <div class="mini-gallery" aria-label="Galería de cubre tanque, puertas y cobertor A/A">
+              <img class="lb-item" data-group="svc-detalle" src="img/servicios/cubretanque-1.jpg" alt="Cubre tanque - ejemplo 1" loading="lazy">
+              <img class="lb-item" data-group="svc-detalle" src="img/servicios/puertas-1.jpg" alt="Puertas - ejemplo 1" loading="lazy">
+              <img class="lb-item" data-group="svc-detalle" src="img/servicios/puertas-2.jpg" alt="Puertas - ejemplo 2" loading="lazy">
+            </div>
+          </article>
+
+          <!-- 3 - Cerramientos -->
           <article class="service-card">
             <div class="service-card__top">
               <h3>Cerramientos Hierro y Vidrio</h3>
@@ -138,31 +158,14 @@
             <div class="subtags">
               <span class="subtag">Plegable</span><span class="subtag">Corredizo</span><span class="subtag">Doble Hoja</span>
             </div>
-            <div class="mini-gallery js-lightbox">
-              <img src="img/servicios/cerramientos-1.jpg" alt="Cerramiento - ejemplo 1" loading="lazy">
-              <img src="img/servicios/cerramientos-2.jpg" alt="Cerramiento - ejemplo 2" loading="lazy">
-              <img src="img/servicios/cerramientos-3.jpg" alt="Cerramiento - ejemplo 3" loading="lazy">
+            <div class="mini-gallery" aria-label="Galería de cerramientos">
+              <img class="lb-item" data-group="svc-cerramientos" src="img/servicios/cerramientos-1.jpg" alt="Cerramiento - ejemplo 1" loading="lazy">
+              <img class="lb-item" data-group="svc-cerramientos" src="img/servicios/cerramientos-2.jpg" alt="Cerramiento - ejemplo 2" loading="lazy">
+              <img class="lb-item" data-group="svc-cerramientos" src="img/servicios/cerramientos-3.jpg" alt="Cerramiento - ejemplo 3" loading="lazy">
             </div>
           </article>
 
-          <!-- 3 -->
-          <article class="service-card">
-            <div class="service-card__top">
-              <h3>Cercos Premium</h3>
-              <span class="tag">Exterior</span>
-            </div>
-            <p>Seguridad y presencia, manteniendo una estética cuidada.</p>
-            <div class="subtags">
-              <span class="subtag">Diseño</span><span class="subtag">Terminación</span><span class="subtag">Instalación</span>
-            </div>
-            <div class="mini-gallery js-lightbox">
-              <img src="img/servicios/cercos-1.jpg" alt="Cerco - ejemplo 1" loading="lazy">
-              <img src="img/servicios/cercos-2.jpg" alt="Cerco - ejemplo 2" loading="lazy">
-              <img src="img/servicios/cercos-3.jpg" alt="Cerco - ejemplo 3" loading="lazy">
-            </div>
-          </article>
-
-          <!-- 4 -->
+          <!-- 4 - (Los que tienen 2 imágenes van al final) Portón -->
           <article class="service-card">
             <div class="service-card__top">
               <h3>Portón Corredizo + Cercos</h3>
@@ -172,14 +175,29 @@
             <div class="subtags">
               <span class="subtag">Corredizo</span><span class="subtag">Estructura</span><span class="subtag">Detalle</span>
             </div>
-            <div class="mini-gallery js-lightbox">
-              <img src="img/servicios/portones-1.jpg" alt="Portón - ejemplo 1" loading="lazy">
-              <img src="img/servicios/portones-2.jpg" alt="Portón - ejemplo 2" loading="lazy">
-              <img src="img/servicios/portones-3.jpg" alt="Portón - ejemplo 3" loading="lazy">
+            <div class="mini-gallery" aria-label="Galería de portones">
+              <img class="lb-item" data-group="svc-portones" src="img/servicios/portones-1.jpg" alt="Portón - ejemplo 1" loading="lazy">
+              <img class="lb-item" data-group="svc-portones" src="img/servicios/portones-2.jpg" alt="Portón - ejemplo 2" loading="lazy">
             </div>
           </article>
 
-          <!-- 5 -->
+          <!-- 5 - Cercos -->
+          <article class="service-card">
+            <div class="service-card__top">
+              <h3>Cercos Premium</h3>
+              <span class="tag">Exterior</span>
+            </div>
+            <p>Seguridad y presencia, manteniendo una estética cuidada.</p>
+            <div class="subtags">
+              <span class="subtag">Diseño</span><span class="subtag">Terminación</span><span class="subtag">Instalación</span>
+            </div>
+            <div class="mini-gallery" aria-label="Galería de cercos">
+              <img class="lb-item" data-group="svc-cercos" src="img/servicios/cercos-1.jpg" alt="Cerco - ejemplo 1" loading="lazy">
+              <img class="lb-item" data-group="svc-cercos" src="img/servicios/cercos-2.jpg" alt="Cerco - ejemplo 2" loading="lazy">
+            </div>
+          </article>
+
+          <!-- 6 - Chapa -->
           <article class="service-card">
             <div class="service-card__top">
               <h3>Chapa Decorativa + Estructura</h3>
@@ -189,29 +207,12 @@
             <div class="subtags">
               <span class="subtag">Chapa</span><span class="subtag">Hierro</span><span class="subtag">Terminación</span>
             </div>
-            <div class="mini-gallery js-lightbox">
-              <img src="img/servicios/chapa-1.jpg" alt="Chapa decorativa - ejemplo 1" loading="lazy">
-              <img src="img/servicios/chapa-2.jpg" alt="Chapa decorativa - ejemplo 2" loading="lazy">
-              <img src="img/servicios/chapa-3.jpg" alt="Chapa decorativa - ejemplo 3" loading="lazy">
+            <div class="mini-gallery" aria-label="Galería de chapa decorativa">
+              <img class="lb-item" data-group="svc-chapa" src="img/servicios/chapa-1.jpg" alt="Chapa decorativa - ejemplo 1" loading="lazy">
+              <img class="lb-item" data-group="svc-chapa" src="img/servicios/chapa-2.jpg" alt="Chapa decorativa - ejemplo 2" loading="lazy">
             </div>
           </article>
 
-          <!-- 6 -->
-          <article class="service-card">
-            <div class="service-card__top">
-              <h3>Cobertor de Aire Acondicionado + Puertas</h3>
-              <span class="tag">Detalle</span>
-            </div>
-            <p>Soluciones puntuales para ordenar el espacio y levantar la estética.</p>
-            <div class="subtags">
-              <span class="subtag">Cobertor AC</span><span class="subtag">Diseño</span><span class="subtag">Puertas</span>
-            </div>
-            <div class="mini-gallery js-lightbox">
-              <img src="img/servicios/cobertor-ac-1.jpg" alt="Cobertor de aire acondicionado - ejemplo 1" loading="lazy">
-              <img src="img/servicios/cobertor-ac-2.jpg" alt="Cobertor de aire acondicionado - ejemplo 2" loading="lazy">
-              <img src="img/servicios/puertas-1.jpg" alt="Puerta - ejemplo 1" loading="lazy">
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -225,12 +226,12 @@
         </div>
 
         <div class="gallery">
-          <img src="img/trabajos/trabajo-1.jpg" alt="Trabajo 1" loading="lazy">
-          <img src="img/trabajos/trabajo-2.jpg" alt="Trabajo 2" loading="lazy">
-          <img src="img/trabajos/trabajo-3.jpg" alt="Trabajo 3" loading="lazy">
-          <img src="img/trabajos/trabajo-4.jpg" alt="Trabajo 4" loading="lazy">
-          <img src="img/trabajos/trabajo-5.jpg" alt="Trabajo 5" loading="lazy">
-          <img src="img/trabajos/trabajo-6.jpg" alt="Trabajo 6" loading="lazy">
+          <img class="lb-item" data-group="trabajos" src="img/trabajos/trabajo-1.jpg" alt="Trabajo 1" loading="lazy">
+          <img class="lb-item" data-group="trabajos" src="img/trabajos/trabajo-2.jpg" alt="Trabajo 2" loading="lazy">
+          <img class="lb-item" data-group="trabajos" src="img/trabajos/trabajo-3.jpg" alt="Trabajo 3" loading="lazy">
+          <img class="lb-item" data-group="trabajos" src="img/trabajos/trabajo-4.jpg" alt="Trabajo 4" loading="lazy">
+          <img class="lb-item" data-group="trabajos" src="img/trabajos/trabajo-5.jpg" alt="Trabajo 5" loading="lazy">
+          <img class="lb-item" data-group="trabajos" src="img/trabajos/trabajo-6.jpg" alt="Trabajo 6" loading="lazy">
         </div>
       </div>
     </section>
@@ -278,31 +279,6 @@
       </div>
     </section>
 
-    <!-- Reseñas (OCULTA hasta que pegues reseñas reales) -->
-    <section class="section is-hidden" id="resenas">
-      <div class="container">
-        <div class="section__head">
-          <h2>Reseñas</h2>
-          <p>Reseñas reales de clientes (Google). Cuando Guille te pase las reseñas, las pegás acá.</p>
-        </div>
-
-        <div class="reviews">
-          <article class="review">
-            <p class="review__text">“(Pegar reseña real de Google acá)”</p>
-            <p class="review__meta">Nombre • Zona</p>
-          </article>
-          <article class="review">
-            <p class="review__text">“(Pegar reseña real de Google acá)”</p>
-            <p class="review__meta">Nombre • Zona</p>
-          </article>
-          <article class="review">
-            <p class="review__text">“(Pegar reseña real de Google acá)”</p>
-            <p class="review__meta">Nombre • Zona</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- Contacto -->
     <section class="section section--alt" id="contacto">
       <div class="container">
@@ -346,18 +322,25 @@
 
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" aria-hidden="true">
-    <div class="lightbox__backdrop" data-close="1"></div>
-    <figure class="lightbox__content" role="dialog" aria-modal="true" aria-label="Vista ampliada">
-      <button class="lightbox__close" type="button" aria-label="Cerrar" data-close="1">✕</button>
-      <img class="lightbox__img" id="lightboxImg" alt="">
-      <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
-    </figure>
+    <div class="lightbox__backdrop" data-lb-close="true"></div>
+
+    <div class="lightbox__panel" role="dialog" aria-modal="true" aria-label="Vista ampliada">
+      <button class="lightbox__close" type="button" aria-label="Cerrar" data-lb-close="true">✕</button>
+      <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Anterior">‹</button>
+
+      <figure class="lightbox__figure">
+        <img id="lightboxImg" alt="" />
+        <figcaption id="lightboxCap" class="lightbox__cap"></figcaption>
+      </figure>
+
+      <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Siguiente">›</button>
+    </div>
   </div>
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // Fallback prolijo si faltan imágenes (evita ícono roto)
+    // Fallback prolijo si faltan imágenes
     const placeholder = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
       <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800">
         <defs>
@@ -378,50 +361,119 @@
       img.addEventListener("error", () => { img.src = placeholder; });
     });
 
-    // Lightbox
-    (function () {
-      const box = document.getElementById('lightbox');
-      const imgEl = document.getElementById('lightboxImg');
-      const capEl = document.getElementById('lightboxCaption');
+    // ===== Lightbox con swipe + navegación =====
+    const lb = document.getElementById("lightbox");
+    const lbImg = document.getElementById("lightboxImg");
+    const lbCap = document.getElementById("lightboxCap");
+    const btnPrev = lb.querySelector(".lightbox__nav--prev");
+    const btnNext = lb.querySelector(".lightbox__nav--next");
 
-      function openLightbox(src, alt) {
-        imgEl.src = src;
-        imgEl.alt = alt || 'Imagen ampliada';
-        capEl.textContent = alt || '';
-        box.classList.add('is-open');
-        box.setAttribute('aria-hidden', 'false');
-        document.body.classList.add('is-lock');
-      }
+    let currentGroup = "";
+    let groupItems = [];
+    let currentIndex = 0;
 
-      function closeLightbox() {
-        box.classList.remove('is-open');
-        box.setAttribute('aria-hidden', 'true');
-        imgEl.src = '';
-        capEl.textContent = '';
-        document.body.classList.remove('is-lock');
-      }
+    function openLightbox(group, index) {
+      currentGroup = group;
+      groupItems = Array.from(document.querySelectorAll(`.lb-item[data-group="${group}"]`));
+      currentIndex = Math.max(0, Math.min(index, groupItems.length - 1));
 
-      // Click en imágenes (Servicios)
-      document.querySelectorAll('.js-lightbox img').forEach((img) => {
-        img.style.cursor = 'zoom-in';
-        img.setAttribute('tabindex', '0');
+      lb.setAttribute("aria-hidden", "false");
+      lb.classList.add("is-open");
+      document.documentElement.classList.add("is-modal");
 
-        img.addEventListener('click', () => openLightbox(img.src, img.alt));
-        img.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') openLightbox(img.src, img.alt);
-        });
+      renderLightbox();
+    }
+
+    function closeLightbox() {
+      lb.setAttribute("aria-hidden", "true");
+      lb.classList.remove("is-open");
+      document.documentElement.classList.remove("is-modal");
+      currentGroup = "";
+      groupItems = [];
+      currentIndex = 0;
+    }
+
+    function renderLightbox() {
+      const item = groupItems[currentIndex];
+      if (!item) return;
+
+      lbImg.src = item.src;
+      lbImg.alt = item.alt || "Imagen ampliada";
+      lbCap.textContent = item.alt || "";
+
+      // si hay 1 sola imagen, oculto nav
+      const hasNav = groupItems.length > 1;
+      btnPrev.style.display = hasNav ? "inline-flex" : "none";
+      btnNext.style.display = hasNav ? "inline-flex" : "none";
+    }
+
+    function prev() {
+      if (groupItems.length < 2) return;
+      currentIndex = (currentIndex - 1 + groupItems.length) % groupItems.length;
+      renderLightbox();
+    }
+    function next() {
+      if (groupItems.length < 2) return;
+      currentIndex = (currentIndex + 1) % groupItems.length;
+      renderLightbox();
+    }
+
+    // Click en imágenes para abrir
+    document.querySelectorAll(".lb-item").forEach((img) => {
+      img.addEventListener("click", () => {
+        const group = img.getAttribute("data-group") || "default";
+        const items = Array.from(document.querySelectorAll(`.lb-item[data-group="${group}"]`));
+        const index = items.indexOf(img);
+        openLightbox(group, index);
       });
+    });
 
-      // Cerrar por click backdrop/botón
-      box.addEventListener('click', (e) => {
-        if (e.target && e.target.dataset && e.target.dataset.close) closeLightbox();
-      });
+    // Cerrar
+    lb.addEventListener("click", (e) => {
+      if (e.target && e.target.getAttribute("data-lb-close") === "true") closeLightbox();
+    });
 
-      // Cerrar con ESC
-      window.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && box.classList.contains('is-open')) closeLightbox();
-      });
-    })();
+    // Botones nav
+    btnPrev.addEventListener("click", prev);
+    btnNext.addEventListener("click", next);
+
+    // Teclado
+    window.addEventListener("keydown", (e) => {
+      if (!lb.classList.contains("is-open")) return;
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowLeft") prev();
+      if (e.key === "ArrowRight") next();
+    });
+
+    // Swipe (touch)
+    let startX = 0;
+    let startY = 0;
+    let dragging = false;
+
+    const panel = lb.querySelector(".lightbox__panel");
+    panel.addEventListener("touchstart", (e) => {
+      if (!lb.classList.contains("is-open")) return;
+      const t = e.touches[0];
+      startX = t.clientX;
+      startY = t.clientY;
+      dragging = true;
+    }, { passive: true });
+
+    panel.addEventListener("touchend", (e) => {
+      if (!dragging) return;
+      dragging = false;
+
+      const t = e.changedTouches[0];
+      const dx = t.clientX - startX;
+      const dy = t.clientY - startY;
+
+      // Evita que swipe vertical dispare
+      if (Math.abs(dy) > Math.abs(dx)) return;
+
+      const threshold = 40;
+      if (dx > threshold) prev();
+      if (dx < -threshold) next();
+    }, { passive: true });
   </script>
 </body>
 </html>
