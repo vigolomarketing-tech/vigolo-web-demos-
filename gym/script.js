@@ -1,4 +1,5 @@
-const WHATSAPP_NUMBER = "5491123456789";
+const WHATSAPP_NUMBER = "5491128074105";
+const DEFAULT_WHATSAPP_MESSAGE = "Hola Santiago, vi la demo del gimnasio y quiero información para tener una web similar para mi negocio.";
 const DEMO_MEMBER_NAME = "Santiago Vigolo";
 
 const testimonials = [
@@ -78,14 +79,14 @@ const classSchedule = {
 const $ = (selector, scope = document) => scope.querySelector(selector);
 const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
 
-function buildWhatsappUrl(message) {
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+function buildWhatsappUrl(message = DEFAULT_WHATSAPP_MESSAGE) {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message || DEFAULT_WHATSAPP_MESSAGE)}`;
 }
 
 function bindWhatsappLinks() {
   $$(".js-whatsapp").forEach((link) => {
-    const message = link.dataset.message || "Hola, quiero información sobre el gimnasio.";
-    link.href = buildWhatsappUrl(message);
+    link.dataset.message = DEFAULT_WHATSAPP_MESSAGE;
+    link.href = buildWhatsappUrl();
     link.target = "_blank";
     link.rel = "noopener";
   });
@@ -222,8 +223,7 @@ function initBooking() {
     generateAccessQr(buildAccessPayload(selected));
     updateAccountPanel(selected);
 
-    const message = `Hola, quiero confirmar mi reserva para ${selected.activity} el día ${selected.day} a las ${selected.time}.`;
-    $("#confirmWhatsapp").href = buildWhatsappUrl(message);
+    $("#confirmWhatsapp").href = buildWhatsappUrl();
     $("#bookingConfirmation").scrollIntoView({ behavior: "smooth", block: "nearest" });
   });
 }
