@@ -1,120 +1,531 @@
 <!doctype html>
 <html lang="es-AR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Demo Gym Premium 2026. Landing moderna para convertir visitas en consultas por WhatsApp." />
-  <title>Demo Gym Premium | Vigolo Web Studio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PulseFit Studio | Demo premium para gimnasios con WhatsApp, planes y testimonios</title>
+    <meta name="description" content="Demo visual premium para gimnasios: hero moderno, estadísticas, planes, testimonios, galería, FAQ y consultas directas por WhatsApp. Compatible con GitHub Pages.">
+    <meta name="keywords" content="gimnasio, fitness, web para gimnasio, landing gimnasio, WhatsApp gimnasio, planes fitness">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PulseFit Studio | Demo premium para gimnasios">
+    <meta property="og:description" content="Una web fitness moderna para captar más consultas, mostrar planes y vender membresías por WhatsApp.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80">
+    <meta name="theme-color" content="#0b0b0d">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1800&q=82">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HealthClub",
+        "name": "PulseFit Studio",
+        "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80",
+        "description": "Gimnasio premium con clases grupales, planes fitness y consultas por WhatsApp.",
+        "telephone": "+54 9 11 2345 6789",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Corrientes 1234",
+          "addressLocality": "Buenos Aires",
+          "addressRegion": "CABA",
+          "addressCountry": "AR"
+        },
+        "openingHours": ["Mo-Fr 06:00-23:00", "Sa 08:00-20:00"],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "250"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
 
-<body>
-  <!-- Header -->
-  <header class="topbar">
-    <div class="container topbar__inner">
-      <div class="brand">
-        <span class="dot" aria-hidden="true"></span>
-        <div class="brand__text">
-          <strong>Gym / Fitness Premium</strong>
-          <small>Demo • Vigolo Web Studio</small>
-        </div>
-      </div>
-
-      <a class="btn btn--accent" target="_blank" rel="noopener"
-         href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20una%20web%20para%20mi%20gym.%20%C2%BFMe%20pas%C3%A1s%20info%20y%20packs%3F">
-        Consultar
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="PulseFit Studio">
+        <span class="brand-mark">PF</span>
+        <span>
+          <strong>PulseFit</strong>
+          <small>Studio Premium</small>
+        </span>
       </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Navegación principal">
+        <a href="#planes">Planes</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#mi-cuenta">Mi Cuenta</a>
+        <a href="#sistema-digital">Sistema</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="header-cta js-whatsapp" href="#" data-message="Hola, quiero una demo premium para mi gimnasio.">
+        Solicitar demo
+      </a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="inicio">
+        <img class="hero-media" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1800&q=82" alt="Atleta entrenando con barra en un gimnasio moderno">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-inner section-shell">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Demo fitness premium</span>
+            <h1>Tu gimnasio puede verse y vender como una marca de alto nivel.</h1>
+            <p>
+              Una experiencia moderna para captar más consultas por WhatsApp, mostrar planes con claridad y generar confianza antes de que el cliente pise el gimnasio.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary js-whatsapp" href="#" data-message="Hola, quiero más consultas por WhatsApp para mi gimnasio.">Quiero más consultas</a>
+              <a class="btn btn-secondary" href="#planes">Ver planes</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel reveal" aria-label="Resumen comercial">
+            <div class="panel-status">
+              <span></span>
+              <strong>Captación activa</strong>
+            </div>
+            <div class="lead-card">
+              <span>Consultas por WhatsApp</span>
+              <strong>+38%</strong>
+              <small>Demo mensual estimada</small>
+            </div>
+            <div class="mini-metrics">
+              <div><strong>24</strong><span>leads hoy</span></div>
+              <div><strong>71%</strong><span>interés planes</span></div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="hero-stats section-shell" aria-label="Estadísticas destacadas">
+          <div><strong>+500</strong><span>alumnos activos</span></div>
+          <div><strong>+10</strong><span>entrenadores</span></div>
+          <div><strong>+250</strong><span>reseñas</span></div>
+          <div><strong>4.9</strong><span>estrellas</span></div>
+        </div>
+      </section>
+
+      <section class="section plans-section" id="planes">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Planes</span>
+            <h2>Ofertas claras para convertir visitas en alumnos.</h2>
+            <p>Cada plan muestra beneficios, horarios, precio demo y consulta directa por WhatsApp con un mensaje específico.</p>
+          </div>
+
+          <div class="plans-grid">
+            <article class="plan-card reveal">
+              <span class="plan-icon">M</span>
+              <h3>Musculación</h3>
+              <p>Sala equipada para fuerza, hipertrofia y acondicionamiento con seguimiento técnico.</p>
+              <ul>
+                <li>Rutinas guiadas</li>
+                <li>Evaluación inicial</li>
+                <li>Acceso libre</li>
+              </ul>
+              <div class="plan-meta"><span>Lun a sáb · 06 a 23</span><strong>$19.900</strong></div>
+              <a class="btn btn-secondary js-whatsapp" href="#" data-message="Hola, quiero información sobre el plan de Musculación.">Consultar plan</a>
+            </article>
+
+            <article class="plan-card featured reveal">
+              <span class="plan-icon">F</span>
+              <h3>Funcional</h3>
+              <p>Clases dinámicas para mejorar fuerza, movilidad, coordinación y resistencia.</p>
+              <ul>
+                <li>Grupos reducidos</li>
+                <li>Medición de progreso</li>
+                <li>Alta intensidad</li>
+              </ul>
+              <div class="plan-meta"><span>Lun, mié, vie · 19</span><strong>$24.900</strong></div>
+              <a class="btn btn-primary js-whatsapp" href="#" data-message="Hola, quiero información sobre el plan Funcional.">Consultar plan</a>
+            </article>
+
+            <article class="plan-card reveal">
+              <span class="plan-icon">B</span>
+              <h3>Boxeo</h3>
+              <p>Técnica, potencia y cardio en clases mixtas para todos los niveles.</p>
+              <ul>
+                <li>Bolsa y manoplas</li>
+                <li>Trabajo técnico</li>
+                <li>Cardio intenso</li>
+              </ul>
+              <div class="plan-meta"><span>Mar y jue · 20</span><strong>$22.900</strong></div>
+              <a class="btn btn-secondary js-whatsapp" href="#" data-message="Hola, quiero información sobre las clases de Boxeo.">Consultar plan</a>
+            </article>
+
+            <article class="plan-card reveal">
+              <span class="plan-icon">S</span>
+              <h3>Spinning</h3>
+              <p>Sesiones inmersivas con música, métricas y objetivos de resistencia.</p>
+              <ul>
+                <li>Clases por nivel</li>
+                <li>Alto gasto calórico</li>
+                <li>Seguimiento semanal</li>
+              </ul>
+              <div class="plan-meta"><span>Lun a vie · 18/21</span><strong>$21.900</strong></div>
+              <a class="btn btn-secondary js-whatsapp" href="#" data-message="Hola, quiero información sobre Spinning.">Consultar plan</a>
+            </article>
+
+            <article class="plan-card reveal">
+              <span class="plan-icon">PT</span>
+              <h3>Personal Trainer</h3>
+              <p>Plan 1:1 con objetivos, agenda y seguimiento profesional de evolución.</p>
+              <ul>
+                <li>Plan personalizado</li>
+                <li>Turnos flexibles</li>
+                <li>Seguimiento cercano</li>
+              </ul>
+              <div class="plan-meta"><span>Turnos a coordinar</span><strong>$54.900</strong></div>
+              <a class="btn btn-secondary js-whatsapp" href="#" data-message="Hola, quiero información sobre Personal Trainer.">Consultar plan</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reservation-section" id="reservas">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Reservas online</span>
+            <h2>Reservá tu clase</h2>
+            <p>Elegí actividad, día y horario. La demo muestra cupos disponibles y confirma la reserva en frontend, sin backend.</p>
+          </div>
+
+          <div class="booking-layout">
+            <form class="booking-card reveal" id="bookingForm">
+              <div class="field-group">
+                <label for="activitySelect">Actividad</label>
+                <select id="activitySelect" name="activity"></select>
+              </div>
+
+              <div class="booking-fields">
+                <div class="field-group">
+                  <label for="daySelect">Día</label>
+                  <select id="daySelect" name="day"></select>
+                </div>
+                <div class="field-group">
+                  <label for="timeSelect">Horario</label>
+                  <select id="timeSelect" name="time"></select>
+                </div>
+              </div>
+
+              <div class="class-availability" id="classAvailability" aria-live="polite"></div>
+
+              <button class="btn btn-primary full-width" type="submit">Reservar lugar</button>
+            </form>
+
+            <aside class="booking-confirmation reveal" id="bookingConfirmation" aria-live="polite">
+              <div class="confirmation-empty" id="confirmationEmpty">
+                <span>Demo frontend</span>
+                <h3>La confirmación aparecerá acá.</h3>
+                <p>El alumno reserva visualmente y puede confirmar el turno por WhatsApp con un mensaje automático.</p>
+              </div>
+
+              <div class="confirmation-ready" id="confirmationReady" hidden>
+                <span class="success-pill">Reserva confirmada</span>
+                <h3 id="confirmedActivity">Funcional</h3>
+                <dl class="reservation-summary">
+                  <div>
+                    <dt>Actividad</dt>
+                    <dd id="summaryActivity">Funcional</dd>
+                  </div>
+                  <div>
+                    <dt>Día</dt>
+                    <dd id="summaryDay">Lunes</dd>
+                  </div>
+                  <div>
+                    <dt>Horario</dt>
+                    <dd id="summaryTime">19:00</dd>
+                  </div>
+                  <div>
+                    <dt>Estado</dt>
+                    <dd>Confirmado</dd>
+                  </div>
+                </dl>
+                <div class="access-qr">
+                  <div class="qr-box" id="accessQr" aria-label="QR de acceso para la reserva"></div>
+                  <p>Presentá este QR en recepción para ingresar a tu clase.</p>
+                </div>
+                <a class="btn btn-secondary" id="confirmWhatsapp" href="#" target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section account-section" id="mi-cuenta">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Mini app del alumno</span>
+            <h2>Mi Cuenta</h2>
+            <p>Una vista demo para mostrar membresía, próxima clase y progreso mensual con estética de aplicación fitness.</p>
+          </div>
+
+          <div class="account-app reveal">
+            <div class="account-profile">
+              <div>
+                <span class="account-avatar">SV</span>
+                <h3>Santiago Vigolo</h3>
+                <p>Objetivo: Ganar fuerza y bajar grasa</p>
+              </div>
+              <span class="account-status">Membresía activa</span>
+            </div>
+
+            <div class="account-metrics">
+              <article>
+                <span>Plan</span>
+                <strong>Full Access</strong>
+              </article>
+              <article>
+                <span>Vencimiento</span>
+                <strong>30/07/2026</strong>
+              </article>
+              <article>
+                <span>Clases este mes</span>
+                <strong>12</strong>
+              </article>
+            </div>
+
+            <div class="account-reservation">
+              <div class="panel-title">
+                <h3>Próxima clase reservada</h3>
+                <span id="accountReservationBadge">Confirmado</span>
+              </div>
+              <div class="account-reservation-grid">
+                <div>
+                  <span>Actividad</span>
+                  <strong id="accountActivity">Funcional</strong>
+                </div>
+                <div>
+                  <span>Día</span>
+                  <strong id="accountDay">Lunes</strong>
+                </div>
+                <div>
+                  <span>Horario</span>
+                  <strong id="accountTime">08:00</strong>
+                </div>
+                <div>
+                  <span>Estado</span>
+                  <strong id="accountStatus">Confirmado</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section business-section" id="sistema-digital">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Para dueños de gimnasios</span>
+            <h2>Sistema digital para tu gimnasio</h2>
+            <p>Una web comercial con reservas, WhatsApp y QR convierte la presencia online del gimnasio en una herramienta real para captar clientes y ordenar consultas.</p>
+          </div>
+
+          <div class="business-grid reveal">
+            <article>
+              <span>WA</span>
+              <h3>Consultas por WhatsApp</h3>
+              <p>Botones con mensajes listos para recibir leads más ordenados desde planes, reservas y campañas.</p>
+            </article>
+            <article>
+              <span>PL</span>
+              <h3>Planes y servicios claros</h3>
+              <p>Presentación premium de actividades, beneficios, horarios y precios demo para vender mejor.</p>
+            </article>
+            <article>
+              <span>RS</span>
+              <h3>Reservas online</h3>
+              <p>El alumno elige actividad, día y horario sin depender de mensajes manuales.</p>
+            </article>
+            <article>
+              <span>CP</span>
+              <h3>Control de cupos</h3>
+              <p>Cupos visuales por horario para mostrar disponibilidad y generar urgencia comercial.</p>
+            </article>
+            <article>
+              <span>QR</span>
+              <h3>QR de acceso</h3>
+              <p>Una función simple e impactante para demostrar tecnología al alumno y al dueño.</p>
+            </article>
+            <article>
+              <span>GO</span>
+              <h3>Más presencia online</h3>
+              <p>Una imagen profesional ayuda a captar clientes desde Google, redes sociales y anuncios.</p>
+            </article>
+          </div>
+
+          <div class="comparison-board reveal">
+            <div class="comparison-column traditional">
+              <div class="comparison-title">
+                <span>Antes</span>
+                <h3>Gimnasio tradicional</h3>
+              </div>
+              <ul>
+                <li>Consultas desordenadas</li>
+                <li>Horarios por mensaje</li>
+                <li>Sin reservas online</li>
+                <li>Sin control de cupos</li>
+                <li>Imagen poco profesional</li>
+              </ul>
+            </div>
+
+            <div class="comparison-column digital">
+              <div class="comparison-title">
+                <span>Después</span>
+                <h3>Gimnasio con sistema digital</h3>
+              </div>
+              <ul>
+                <li>WhatsApp automatizado</li>
+                <li>Reservas online</li>
+                <li>QR de acceso</li>
+                <li>Planes claros</li>
+                <li>Más consultas y mejor presencia online</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="business-cta reveal">
+            <div>
+              <span class="eyebrow">Producto vendible</span>
+              <h3>Convertí esta demo en una solución real para gimnasios.</h3>
+            </div>
+            <a class="btn btn-primary js-whatsapp" href="#" data-message="Hola, quiero una web con sistema de reservas para mi gimnasio.">Quiero una web así para mi gimnasio</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials-section" id="testimonios">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Testimonios</span>
+            <h2>Prueba social para que el dueño vea confianza.</h2>
+            <p>Opiniones demo con fotos, calificación y carrusel automático para reforzar autoridad visual.</p>
+          </div>
+
+          <div class="testimonial-carousel reveal" id="testimonialCarousel" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="galeria">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Galería</span>
+            <h2>Instalaciones, clases y energía de entrenamiento.</h2>
+            <p>Una galería moderna con lightbox para que el gimnasio se perciba profesional y activo.</p>
+          </div>
+
+          <div class="gallery-grid reveal" id="galleryGrid">
+            <button type="button" data-image="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=600&q=76" alt="Máquinas de gimnasio" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=76" alt="Zona de entrenamiento" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=76" alt="Clase grupal fitness" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=600&q=76" alt="Área de pesas" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1550345332-09e3ac987658?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1550345332-09e3ac987658?auto=format&fit=crop&w=600&q=76" alt="Entrenamiento funcional" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=600&q=76" alt="Atleta levantando pesas" loading="lazy">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">FAQ</span>
+            <h2>Preguntas frecuentes que aceleran la consulta.</h2>
+            <p>Bloque desplegable para responder dudas comunes y empujar al contacto por WhatsApp.</p>
+          </div>
+
+          <div class="faq-list reveal" id="faqList">
+            <details open>
+              <summary>¿Puedo probar una clase?</summary>
+              <p>Sí. La demo está preparada para orientar al usuario a consultar por WhatsApp y coordinar una clase de prueba.</p>
+            </details>
+            <details>
+              <summary>¿Hay promociones?</summary>
+              <p>Sí. Los planes pueden mostrar promociones de temporada, referidos, packs familiares o descuentos por pago mensual.</p>
+            </details>
+            <details>
+              <summary>¿Puedo consultar por Personal Trainer?</summary>
+              <p>Sí. Cada plan tiene un mensaje propio de WhatsApp para que el gimnasio reciba consultas más ordenadas.</p>
+            </details>
+            <details>
+              <summary>¿La web funciona en celular?</summary>
+              <p>Sí. Esta etapa está diseñada para celular, tablet y PC, manteniendo buena velocidad y compatibilidad con GitHub Pages.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-cta" id="contacto">
+        <div class="section-shell reveal">
+          <span class="eyebrow">Prioridad comercial</span>
+          <h2>Más consultas por WhatsApp, más alumnos y una imagen premium.</h2>
+          <p>Esta primera versión ya alcanza para que un gimnasio vea valor: diseño profesional, planes claros, testimonios, galería y contacto directo.</p>
+          <a class="btn btn-primary js-whatsapp" href="#" data-message="Hola, quiero adaptar esta demo premium para venderla a gimnasios.">Quiero esta demo</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button type="button" class="lightbox-close" aria-label="Cerrar galería">×</button>
+      <img src="" alt="Vista ampliada de la galería">
     </div>
-  </header>
 
-  <!-- Hero -->
-  <main class="page">
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <p class="pill">Demo • Gym • Estilo premium 2026</p>
-
-          <h1>Tu gym se ve elite.<br><span class="accent">Más consultas. Más socios.</span></h1>
-
-          <p class="lead">
-            Landing rápida y moderna para convertir visitas en mensajes por WhatsApp (sin perder tiempo).
-          </p>
-
-          <div class="actions">
-            <a class="btn btn--accent" target="_blank" rel="noopener"
-               href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20una%20web%20premium%20para%20mi%20gym.%20%C2%BFC%C3%B3mo%20arrancamos%3F">
-              Pedir info / Reservar
-            </a>
-            <a class="btn btn--ghost" href="#detalles">Ver detalles</a>
-          </div>
-
-          <ul class="checks">
-            <li><b>WhatsApp directo:</b> botón visible y claro</li>
-            <li><b>Look premium:</b> oscuro + acento “neon” moderno</li>
-            <li><b>Mobile first:</b> perfecto en iPhone y Android</li>
-          </ul>
-        </div>
-
-        <div class="hero__media">
-          <div class="shot">
-            <img src="img/gym-hero.jpg" alt="Gimnasio moderno premium" loading="eager" />
-            <div class="shot__badge">
-              <span class="shot__badgeTop">Demo Gym</span>
-              <span class="shot__badgeBottom">Vigolo Web Studio</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Detalles -->
-    <section id="detalles" class="section">
-      <div class="container section__grid">
-        <div class="card">
-          <h2>Qué incluye esta demo</h2>
-          <p>
-            Estructura high-ticket: propuesta fuerte, CTA a WhatsApp, beneficios claros y estética premium.
-          </p>
-
-          <div class="miniGrid">
-            <div class="mini">
-              <h3>Conversión</h3>
-              <p>CTA bien ubicado para que te escriban.</p>
-            </div>
-            <div class="mini">
-              <h3>Confianza</h3>
-              <p>Diseño “caro” que justifica el precio.</p>
-            </div>
-            <div class="mini">
-              <h3>Velocidad</h3>
-              <p>Carga rápida para no perder clientes.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card card--cta">
-          <h2>¿Querés una así para tu gym?</h2>
-          <p>Te pasamos ejemplos + packs y te decimos el ideal según tu objetivo.</p>
-
-          <a class="btn btn--accent btn--full" target="_blank" rel="noopener"
-             href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20cotizar%20una%20web%20para%20mi%20gym.%20%C2%BFMe%20pas%C3%A1s%20packs%20y%20precios%3F">
-            Hablar por WhatsApp
+    <footer class="site-footer">
+      <div class="section-shell footer-grid">
+        <div>
+          <a class="brand" href="#inicio" aria-label="PulseFit Studio">
+            <span class="brand-mark">PF</span>
+            <span>
+              <strong>PulseFit</strong>
+              <small>Studio Premium</small>
+            </span>
           </a>
-
-          <p class="note">Demo creada por <b>Vigolo Web Studio</b>.</p>
+          <p>Demo estática compatible con GitHub Pages. HTML, CSS y JavaScript.</p>
         </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container footer__inner">
-        <span>Demo Gym — <b>Vigolo Web Studio</b></span>
-        <a target="_blank" rel="noopener"
-           href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20cotizar%20una%20web.">
-          WhatsApp
-        </a>
+        <div>
+          <strong>Secciones</strong>
+          <a href="#planes">Planes</a>
+          <a href="#reservas">Reservas</a>
+          <a href="#mi-cuenta">Mi Cuenta</a>
+          <a href="#sistema-digital">Sistema digital</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#galeria">Galería</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <strong>WhatsApp</strong>
+          <a class="js-whatsapp" href="#" data-message="Hola, quiero información sobre los planes del gimnasio.">Consultar planes</a>
+          <a class="js-whatsapp" href="#" data-message="Hola, quiero agendar una demo comercial.">Agendar demo</a>
+        </div>
       </div>
     </footer>
-  </main>
-</body>
+
+    <a class="floating-whatsapp js-whatsapp" href="#" data-message="Hola, quiero información sobre la demo premium para gimnasios." aria-label="Abrir WhatsApp">WA</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
 </html>
