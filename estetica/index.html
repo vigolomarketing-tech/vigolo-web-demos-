@@ -1,142 +1,403 @@
 <!doctype html>
 <html lang="es-AR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Demo Estética Premium | Vigolo Web Studio</title>
-  <meta name="description" content="Demo premium de web para estética: elegante, clara y enfocada en turnos por WhatsApp." />
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lumière · Estética & Belleza | Demo premium con turnos por WhatsApp — Vigolo Web Studio</title>
+    <meta name="description" content="Demo premium para centros de estética y salones de belleza: hero elegante, tratamientos con precios, reserva de turnos online, galería, testimonios, FAQ y WhatsApp directo. Compatible con GitHub Pages.">
+    <meta name="keywords" content="estética, salón de belleza, spa, turnos estética, web para estética, tratamientos faciales, depilación, WhatsApp estética">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lumière · Estética & Belleza | Demo premium">
+    <meta property="og:description" content="Un centro de estética que se ve de alto nivel: turnos online, tratamientos claros y consultas directas por WhatsApp.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1200&q=80">
+    <meta name="theme-color" content="#fbf6f3">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=1600&q=82">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Lumière Estética & Belleza",
+        "image": "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1200&q=80",
+        "description": "Centro de estética premium: limpieza facial, tratamientos corporales, depilación definitiva y bienestar con reserva de turnos por WhatsApp.",
+        "telephone": "+54 9 11 2807 4105",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Libertador 2450",
+          "addressLocality": "Buenos Aires",
+          "addressRegion": "CABA",
+          "addressCountry": "AR"
+        },
+        "openingHours": ["Mo-Fr 09:00-20:00", "Sa 09:00-15:00"],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "184"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
 
-<body>
-  <header class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="#" aria-label="Tu Estética">
-        <span class="brand__mark">✨</span>
-        <span class="brand__text">
-          <strong>Tu Estética</strong>
-          <small>Facial • Corporal • Bienestar</small>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Lumière Estética & Belleza">
+        <span class="brand-mark">L</span>
+        <span class="brand-text">
+          <strong>Lumière</strong>
+          <small>Estética &amp; Belleza</small>
         </span>
       </a>
 
-      <a class="btn btn--primary" target="_blank" rel="noopener"
-         href="https://wa.me/541128074105?text=Hola%2C%20quiero%20reservar%20un%20turno.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%3F">
-        Reservar por WhatsApp
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Navegación principal">
+        <a href="#tratamientos">Tratamientos</a>
+        <a href="#reservas">Turnos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#galeria">Galería</a>
+        <a href="#testimonios">Opiniones</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="header-cta js-whatsapp" href="#" data-message="Hola Santiago, vi la demo de estética y quiero información para tener una web similar para mi negocio.">
+        Reservar turno
       </a>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="inicio">
+        <div class="hero-inner section-shell">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Centro de estética premium · Buenos Aires</span>
+            <h1>Realzá tu belleza en un espacio <span class="accent">pensado para vos</span>.</h1>
+            <p>
+              Tratamientos faciales, corporales y de bienestar con protocolos profesionales y resultados visibles. Reservá tu turno en segundos y regalate un momento para vos.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#reservas">Reservar mi turno</a>
+              <a class="btn btn-secondary" href="#tratamientos">Ver tratamientos</a>
+            </div>
+            <div class="hero-trust">
+              <div class="hero-avatars" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=70" alt="">
+                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=120&q=70" alt="">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=70" alt="">
+              </div>
+              <p><span class="stars" aria-label="5 de 5">★★★★★</span><br><strong>+180 clientas</strong> nos eligen cada mes</p>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="hero-photo">
+              <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=1000&q=82" alt="Tratamiento facial en un centro de estética luminoso y elegante" loading="eager">
+            </div>
+            <div class="hero-chip">
+              <span class="chip-dot" aria-hidden="true"></span>
+              <div>
+                <strong>Agenda abierta</strong>
+                <small>Próximo turno hoy · 16:30</small>
+              </div>
+            </div>
+            <div class="hero-badge">
+              <strong>5.0</strong>
+              <span>★★★★★<br>Google Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stats section-shell" aria-label="Datos destacados">
+          <div><strong>+12</strong><span>tratamientos</span></div>
+          <div><strong>+180</strong><span>clientas por mes</span></div>
+          <div><strong>8</strong><span>años de experiencia</span></div>
+          <div><strong>5.0</strong><span>estrellas Google</span></div>
+        </div>
+      </section>
+
+      <!-- TRATAMIENTOS -->
+      <section class="section services-section" id="tratamientos">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Nuestros tratamientos</span>
+            <h2>Cuidados pensados para tu piel y tu bienestar.</h2>
+            <p>Cada tratamiento incluye una evaluación inicial personalizada para lograr los mejores resultados según tu objetivo.</p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <div class="service-top"><span class="service-icon">✿</span><span class="service-price">$14.900</span></div>
+              <h3>Limpieza facial profunda</h3>
+              <p>Higiene, exfoliación e hidratación para una piel más luminosa y uniforme.</p>
+              <span class="service-time">≈ 60 min</span>
+            </article>
+
+            <article class="service-card featured reveal">
+              <span class="ribbon">Más elegido</span>
+              <div class="service-top"><span class="service-icon">✦</span><span class="service-price">$22.900</span></div>
+              <h3>Ritual facial premium</h3>
+              <p>Limpieza + radiofrecuencia + máscara nutritiva + masaje relajante. Piel renovada al instante.</p>
+              <span class="service-time">≈ 90 min</span>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-top"><span class="service-icon">❋</span><span class="service-price">$18.500</span></div>
+              <h3>Tratamiento corporal</h3>
+              <p>Plan personalizado con aparatología para modelar, tonificar y reducir según tu objetivo.</p>
+              <span class="service-time">≈ 75 min</span>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-top"><span class="service-icon">✧</span><span class="service-price">$9.900</span></div>
+              <h3>Depilación definitiva</h3>
+              <p>Sesiones planificadas con tecnología láser y recomendaciones post-tratamiento.</p>
+              <span class="service-time">≈ 40 min</span>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-top"><span class="service-icon">❀</span><span class="service-price">$12.500</span></div>
+              <h3>Lifting de pestañas</h3>
+              <p>Realzá tu mirada con un efecto natural y duradero, sin extensiones.</p>
+              <span class="service-time">≈ 50 min</span>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-top"><span class="service-icon">♡</span><span class="service-price">$28.900</span></div>
+              <h3>Día de spa</h3>
+              <p>Facial + corporal + masaje + bebida de cortesía. El regalo perfecto para vos o alguien especial.</p>
+              <span class="service-time">≈ 150 min</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESERVAS -->
+      <section class="section reservation-section" id="reservas">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Reserva online</span>
+            <h2>Elegí tratamiento, profesional y horario.</h2>
+            <p>Demo de reserva en frontend: mostrás disponibilidad, generás el turno con QR y confirmás por WhatsApp sin backend.</p>
+          </div>
+
+          <div class="booking-layout">
+            <form class="booking-card reveal" id="bookingForm">
+              <div class="field-group">
+                <label for="serviceSelect">Tratamiento</label>
+                <select id="serviceSelect" name="service"></select>
+              </div>
+
+              <div class="field-group">
+                <label for="proSelect">Profesional</label>
+                <select id="proSelect" name="pro"></select>
+              </div>
+
+              <div class="booking-fields">
+                <div class="field-group">
+                  <label for="daySelect">Día</label>
+                  <select id="daySelect" name="day"></select>
+                </div>
+                <div class="field-group">
+                  <label for="timeSelect">Horario</label>
+                  <select id="timeSelect" name="time"></select>
+                </div>
+              </div>
+
+              <div class="class-availability" id="classAvailability" aria-live="polite"></div>
+
+              <button class="btn btn-primary full-width" type="submit">Confirmar turno</button>
+            </form>
+
+            <aside class="booking-confirmation reveal" id="bookingConfirmation" aria-live="polite">
+              <div class="confirmation-empty" id="confirmationEmpty">
+                <span>Demo frontend</span>
+                <h3>Tu turno aparecerá acá.</h3>
+                <p>La clienta reserva de forma visual y confirma su turno por WhatsApp con un mensaje automático listo para enviar.</p>
+              </div>
+
+              <div class="confirmation-ready" id="confirmationReady" hidden>
+                <span class="success-pill">Turno reservado</span>
+                <h3 id="confirmedService">Ritual facial premium</h3>
+                <dl class="reservation-summary">
+                  <div><dt>Tratamiento</dt><dd id="summaryService">Ritual facial premium</dd></div>
+                  <div><dt>Profesional</dt><dd id="summaryPro">Sofía</dd></div>
+                  <div><dt>Día</dt><dd id="summaryDay">Lunes</dd></div>
+                  <div><dt>Horario</dt><dd id="summaryTime">16:30</dd></div>
+                </dl>
+                <div class="access-qr">
+                  <div class="qr-box" id="accessQr" aria-label="QR del turno"></div>
+                  <p>Presentá este QR en recepción al llegar a tu turno.</p>
+                </div>
+                <a class="btn btn-secondary full-width" id="confirmWhatsapp" href="#" target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCIA / VALUE -->
+      <section class="section experience-section" id="experiencia">
+        <div class="section-shell experience-grid">
+          <div class="experience-media reveal">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1000&q=82" alt="Ambiente relajante del centro de estética con velas y toallas" loading="lazy">
+          </div>
+          <div class="experience-copy reveal">
+            <span class="eyebrow">La experiencia Lumière</span>
+            <h2>Más que un turno. Un momento para vos.</h2>
+            <p>Cada detalle está pensado para que tu visita sea tan agradable como tus resultados.</p>
+            <ul class="value-list">
+              <li><span>✓</span><div><strong>Profesionales matriculadas</strong><p>Equipo con formación continua y protocolos seguros.</p></div></li>
+              <li><span>✓</span><div><strong>Productos de primeras marcas</strong><p>Cosmética profesional de alta gama en cada tratamiento.</p></div></li>
+              <li><span>✓</span><div><strong>Ambiente relajante</strong><p>Un espacio limpio, cálido y diseñado para desconectar.</p></div></li>
+              <li><span>✓</span><div><strong>Higiene certificada</strong><p>Bioseguridad y esterilización en todos los procedimientos.</p></div></li>
+            </ul>
+            <a class="btn btn-primary js-whatsapp" href="#" data-message="Hola Santiago, vi la demo de estética y quiero información para tener una web similar para mi negocio.">Consultar por WhatsApp</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERÍA -->
+      <section class="section gallery-section" id="galeria">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Galería</span>
+            <h2>Un espacio que enamora a primera vista.</h2>
+            <p>Instalaciones, tratamientos y detalles. Tocá una foto para verla en grande.</p>
+          </div>
+
+          <div class="gallery-grid reveal" id="galleryGrid">
+            <button type="button" data-image="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=76" alt="Tratamiento facial en camilla" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=600&q=76" alt="Productos de cosmética profesional" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=76" alt="Ambiente de spa relajante" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=600&q=76" alt="Detalle de tratamiento de belleza" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1620331311520-246422fd82f9?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?auto=format&fit=crop&w=600&q=76" alt="Masaje relajante" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=76" alt="Recepción del centro de estética" loading="lazy">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIOS -->
+      <section class="section testimonials-section" id="testimonios">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Opiniones</span>
+            <h2>Lo que dicen nuestras clientas.</h2>
+            <p>Experiencias reales que reflejan el cuidado y los resultados de cada visita.</p>
+          </div>
+          <div class="testimonial-carousel reveal" id="testimonialCarousel" aria-live="polite"></div>
+          <div class="testimonial-dots" id="testimonialDots" role="tablist" aria-label="Seleccionar opinión"></div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq-section" id="faq">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">FAQ</span>
+            <h2>Preguntas frecuentes.</h2>
+            <p>Todo lo que necesitás saber antes de reservar tu turno.</p>
+          </div>
+          <div class="faq-list reveal" id="faqList">
+            <details open>
+              <summary>¿Cómo reservo un turno?</summary>
+              <p>Elegís tratamiento, profesional y horario en la web, y confirmás por WhatsApp. Esta demo muestra ese flujo completo sin necesidad de backend.</p>
+            </details>
+            <details>
+              <summary>¿Necesito una evaluación previa?</summary>
+              <p>Sí, la primera sesión incluye una evaluación sin cargo para personalizar tu tratamiento y objetivos.</p>
+            </details>
+            <details>
+              <summary>¿Qué medios de pago aceptan?</summary>
+              <p>Efectivo, débito, crédito y transferencia. En la web real se puede sumar seña online para asegurar el turno.</p>
+            </details>
+            <details>
+              <summary>¿La web funciona en celular?</summary>
+              <p>Totalmente. Está diseñada mobile-first, carga rápido y es compatible con GitHub Pages.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLOSING CTA -->
+      <section class="closing-cta" id="contacto">
+        <div class="section-shell reveal">
+          <span class="eyebrow">Prioridad comercial</span>
+          <h2>Más turnos, más clientas y una imagen que transmite confianza.</h2>
+          <p>Esta demo ya alcanza para que un centro de estética venda mejor: diseño elegante, reservas, galería, opiniones y contacto directo por WhatsApp.</p>
+          <div class="hero-actions center">
+            <a class="btn btn-primary js-whatsapp" href="#" data-message="Hola Santiago, vi la demo de estética y quiero información para tener una web similar para mi negocio.">Quiero esta web para mi estética</a>
+            <a class="btn btn-secondary" href="#reservas">Probar la reserva</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button type="button" class="lightbox-close" aria-label="Cerrar galería">×</button>
+      <img src="" alt="Vista ampliada de la galería">
     </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <span class="pill">Demo premium • Turnos por WhatsApp • Mobile-first</span>
-
-          <h1 class="hero-title">
-            Web profesional para estética<br>
-            <span>que convierte visitas en turnos</span>
-          </h1>
-
-          <p class="lead">
-            Diseño elegante, lectura clara y un camino simple hacia WhatsApp.
-            Ideal para negocios que quieren verse premium y vender más.
-          </p>
-
-          <ul class="proof">
-            <li>Botón a WhatsApp siempre visible</li>
-            <li>Presentación premium de servicios</li>
-            <li>Optimizada para celular (donde reservan)</li>
-          </ul>
-
-          <div class="actions">
-            <a class="btn btn--primary" target="_blank" rel="noopener"
-               href="https://wa.me/541128074105?text=Hola%2C%20quiero%20reservar%20un%20turno.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%3F">
-              Reservar turno
-            </a>
-
-            <a class="btn btn--ghost" href="#servicios">
-              Ver servicios
-            </a>
-          </div>
-
-          <div class="mini-stats">
-            <div class="mini-stat">
-              <strong>Imagen premium</strong>
-              <span>Tu estética se ve “pro” al instante</span>
-            </div>
-            <div class="mini-stat">
-              <strong>Más consultas</strong>
-              <span>CTA claro y repetido sin saturar</span>
-            </div>
-            <div class="mini-stat">
-              <strong>Más confianza</strong>
-              <span>Orden + claridad = decisión rápida</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero__media">
-          <div class="media">
-            <img src="img/estetica-hero.jpg" alt="Ambiente de estética limpio y premium" loading="eager" />
-            <div class="media__chip">
-              <strong>Agenda abierta</strong>
-              <span>Consultá disponibilidad por WhatsApp</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="servicios" class="section">
-      <div class="container">
-        <div class="section__head">
-          <h2>Servicios destacados</h2>
-          <p>Lo esencial, bien presentado. Menos dudas = más reservas.</p>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <h3>Limpieza facial profunda</h3>
-            <p>Piel más luminosa y uniforme con un protocolo profesional.</p>
-          </article>
-
-          <article class="card">
-            <h3>Tratamientos corporales</h3>
-            <p>Plan personalizado según objetivo y evaluación.</p>
-          </article>
-
-          <article class="card">
-            <h3>Depilación definitiva</h3>
-            <p>Sesiones planificadas + recomendaciones post-tratamiento.</p>
-          </article>
-        </div>
-
-        <div class="cta-band">
-          <div class="cta-band__text">
-            <strong>¿Querés tu web así?</strong>
-            <span>Se adapta con tu marca, ciudad, servicios y fotos.</span>
-          </div>
-
-          <a class="btn btn--primary" target="_blank" rel="noopener"
-             href="https://wa.me/541128074105?text=Hola%2C%20quiero%20una%20web%20as%C3%AD%20para%20mi%20negocio.%20%C2%BFQu%C3%A9%20necesitan%20para%20arrancar%3F">
-            Pedir propuesta
+    <footer class="site-footer">
+      <div class="section-shell footer-grid">
+        <div>
+          <a class="brand" href="#inicio" aria-label="Lumière Estética & Belleza">
+            <span class="brand-mark">L</span>
+            <span class="brand-text">
+              <strong>Lumière</strong>
+              <small>Estética &amp; Belleza</small>
+            </span>
           </a>
+          <p>Demo estática compatible con GitHub Pages. HTML, CSS y JavaScript.</p>
         </div>
-
-        <p class="disclaimer">Demo de diseño — Vigolo Web Studio.</p>
+        <div>
+          <strong>Centro</strong>
+          <a href="#tratamientos">Tratamientos</a>
+          <a href="#reservas">Turnos</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#galeria">Galería</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <strong>Contacto</strong>
+          <a class="js-whatsapp" href="#" data-message="Hola Santiago, vi la demo de estética y quiero información para tener una web similar para mi negocio.">WhatsApp</a>
+          <span class="footer-line">Av. Libertador 2450, CABA</span>
+          <span class="footer-line">Lun a Sáb · 09 a 20</span>
+        </div>
       </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container footer__inner">
-        <span>© <span id="year"></span> Tu Estética</span>
-        <span class="muted">Demo premium • Vigolo Web Studio</span>
+      <div class="section-shell footer-bottom">
+        <span>© <span id="year"></span> Lumière Estética · Demo</span>
+        <span>Diseñada por <strong>Vigolo Web Studio</strong></span>
       </div>
     </footer>
-  </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
+    <a class="floating-whatsapp js-whatsapp" href="#" data-message="Hola Santiago, vi la demo de estética y quiero información para tener una web similar para mi negocio." aria-label="Abrir WhatsApp">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
 </html>

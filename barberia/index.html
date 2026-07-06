@@ -1,137 +1,438 @@
 <!doctype html>
 <html lang="es-AR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0b0b0c" />
-  <title>Barbería Premium · Demo · Vigolo Web Studio</title>
-  <meta name="description" content="Demo barbería premium 2026: diseño moderno, rápido y pensado para convertir visitas en turnos por WhatsApp." />
-  <link rel="stylesheet" href="style.css?v=1" />
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Barbería Roble & Navaja | Demo premium con turnos por WhatsApp — Vigolo Web Studio</title>
+    <meta name="description" content="Demo premium de barbería: hero cinematográfico, servicios con precios, reserva de turnos online, galería, testimonios, FAQ y WhatsApp directo. Compatible con GitHub Pages.">
+    <meta name="keywords" content="barbería, barber shop, turnos barbería, web para barbería, corte de pelo, afeitado navaja, WhatsApp barbería">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Roble & Navaja | Demo premium para barberías">
+    <meta property="og:description" content="Una barbería que se ve de alto nivel: turnos online, servicios claros y consultas directas por WhatsApp.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80">
+    <meta name="theme-color" content="#0c0a07">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1800&q=82">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "Roble & Navaja Barbershop",
+        "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80",
+        "description": "Barbería premium: cortes de precisión, afeitado clásico a navaja y arreglo de barba con reserva de turnos por WhatsApp.",
+        "telephone": "+54 9 11 2807 4105",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Corrientes 1234",
+          "addressLocality": "Buenos Aires",
+          "addressRegion": "CABA",
+          "addressCountry": "AR"
+        },
+        "openingHours": ["Tu-Fr 10:00-21:00", "Sa 09:00-20:00"],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "320"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
 
-<body>
-  <header class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="#">
-        <span class="brand__dot" aria-hidden="true"></span>
-        <span class="brand__text">
-          <strong>Barbería Premium</strong>
-          <small>Demo · Vigolo Web Studio</small>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Roble & Navaja Barbershop">
+        <span class="brand-mark">R<em>&amp;</em>N</span>
+        <span class="brand-text">
+          <strong>Roble &amp; Navaja</strong>
+          <small>Barbershop · Est. 2014</small>
         </span>
       </a>
 
-      <a class="btn btn--ghost" href="#servicios">Ver detalles</a>
-      <a class="btn btn--gold" href="https://wa.me/5490000000000?text=Hola!%20Quiero%20info%20sobre%20la%20demo%20de%20barber%C3%ADa." target="_blank" rel="noreferrer">
-        Consultar
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#reservas">Turnos</a>
+        <a href="#equipo">Barberos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#testimonios">Reseñas</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="header-cta js-whatsapp" href="#" data-message="Hola Santiago, vi la demo de la barbería y quiero información para tener una web similar para mi negocio.">
+        Reservar turno
       </a>
-    </div>
-  </header>
+    </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="hero__grid">
-        <div class="hero__copy">
-          <p class="pill">Demo · Barbería · Estilo premium 2026</p>
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="inicio">
+        <img class="hero-media" src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1800&q=82" alt="Barbero recortando la barba de un cliente en una barbería premium con luz cálida">
+        <div class="hero-overlay"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
 
-          <h1>
-            Tu barbería se ve <span class="accent">pro</span>.<br />
-            Tus turnos <span class="accent">suben</span>.
-          </h1>
-
-          <p class="lead">
-            Landing moderna, rápida y pensada para convertir visitas en consultas por WhatsApp.
-            Diseño high ticket, sin vueltas.
-          </p>
-
-          <div class="hero__actions">
-            <a class="btn btn--gold" href="https://wa.me/5490000000000?text=Hola!%20Quiero%20reservar%20o%20pedir%20info%20sobre%20la%20web%20de%20barber%C3%ADa." target="_blank" rel="noreferrer">
-              Reservar / Pedir info
-            </a>
-            <a class="btn btn--soft" href="#servicios">Ver detalles</a>
-          </div>
-
-          <ul class="checks">
-            <li><strong>WhatsApp directo:</strong> botón visible y claro</li>
-            <li><strong>Diseño premium:</strong> negro + dorado, look moderno</li>
-            <li><strong>Mobile first:</strong> se ve excelente en iPhone y Android</li>
-          </ul>
-
-          <div class="trust">
-            <div class="trust__card">
-              <span class="trust__kpi">24–72h</span>
-              <span class="trust__txt">Entrega demo / primera versión</span>
+        <div class="hero-inner section-shell">
+          <div class="hero-copy reveal">
+            <span class="eyebrow"><span class="pole" aria-hidden="true"></span> Barbería premium · Buenos Aires</span>
+            <h1>El corte no es un trámite.<br>Es tu <span class="accent">carta de presentación</span>.</h1>
+            <p>
+              Cortes de precisión, afeitado clásico a navaja y arreglo de barba en un ambiente pensado para vos. Reservá tu turno en segundos y llegá sin esperas.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#reservas">Reservar mi turno</a>
+              <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
             </div>
-            <div class="trust__card">
-              <span class="trust__kpi">+Turnos</span>
-              <span class="trust__txt">Copy pensado para convertir</span>
-            </div>
-            <div class="trust__card">
-              <span class="trust__kpi">Pro</span>
-              <span class="trust__txt">Se ve “caro” de verdad</span>
+            <div class="hero-trust">
+              <div class="stars" aria-label="4.9 de 5 estrellas">★★★★★</div>
+              <p><strong>4.9/5</strong> · +320 reseñas de clientes reales</p>
             </div>
           </div>
+
+          <aside class="hero-panel reveal" aria-label="Estado de la barbería">
+            <div class="panel-status">
+              <span></span>
+              <strong>Agenda abierta hoy</strong>
+            </div>
+            <div class="panel-hours">
+              <div><span>Hoy</span><strong>10:00 – 21:00</strong></div>
+              <div><span>Próximo turno libre</span><strong>18:30</strong></div>
+            </div>
+            <div class="panel-services">
+              <div><em>Corte</em><b>$8.500</b></div>
+              <div><em>Corte + Barba</em><b>$12.900</b></div>
+              <div><em>Afeitado navaja</em><b>$7.500</b></div>
+            </div>
+            <a class="btn btn-ghost full-width js-whatsapp" href="#" data-message="Hola Santiago, vi la demo de la barbería y quiero información para tener una web similar para mi negocio.">Consultar por WhatsApp</a>
+          </aside>
         </div>
 
-        <div class="hero__media">
-          <figure class="shot">
-            <img
-              src="img/barberia-hero.jpg"
-              alt="Barbería premium moderna: sillón, luces cálidas, detalles dorados"
-              loading="eager"
-            />
-            <figcaption class="shot__badge">
-              <strong>Demo Barbería</strong>
-              <span>Vigolo Web Studio</span>
-            </figcaption>
-          </figure>
+        <div class="hero-stats section-shell" aria-label="Datos destacados">
+          <div><strong>+8.000</strong><span>cortes al año</span></div>
+          <div><strong>5</strong><span>barberos master</span></div>
+          <div><strong>10</strong><span>años de oficio</span></div>
+          <div><strong>4.9</strong><span>estrellas Google</span></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="servicios" class="section">
-      <div class="section__head">
-        <h2>Qué incluye esta demo</h2>
-        <p>Sección única, fuerte y enfocada en cerrar consultas.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Diseño premium 2026</h3>
-          <p>Negro/gris oscuro con acento dorado. Tipografía moderna y jerarquía fuerte.</p>
-        </article>
-
-        <article class="card">
-          <h3>CTA que convierte</h3>
-          <p>Botones grandes, claros, repetidos en el lugar correcto (sin molestar).</p>
-        </article>
-
-        <article class="card">
-          <h3>Mobile impecable</h3>
-          <p>Todo respira, se lee fácil y se toca bien. Sin textos apretados ni botones feos.</p>
-        </article>
-      </div>
-
-      <div class="ctaBox">
-        <div class="ctaBox__text">
-          <h3>Querés esta web con tu marca?</h3>
-          <p>Te la dejo lista con tu logo, colores, fotos reales y botón directo a tu WhatsApp.</p>
+      <!-- LOGOS / TRUST STRIP -->
+      <section class="marquee" aria-label="Productos y marcas">
+        <div class="marquee-track">
+          <span>Corte de precisión</span><span>•</span>
+          <span>Afeitado a navaja</span><span>•</span>
+          <span>Diseño de barba</span><span>•</span>
+          <span>Productos premium</span><span>•</span>
+          <span>Ritual de toalla caliente</span><span>•</span>
+          <span>Corte de precisión</span><span>•</span>
+          <span>Afeitado a navaja</span><span>•</span>
+          <span>Diseño de barba</span><span>•</span>
+          <span>Productos premium</span><span>•</span>
+          <span>Ritual de toalla caliente</span><span>•</span>
         </div>
-        <a class="btn btn--gold btn--wide" href="https://wa.me/5490000000000?text=Hola!%20Quiero%20mi%20web%20tipo%20Barber%C3%ADa%20Premium%202026." target="_blank" rel="noreferrer">
-          Pedir mi web
-        </a>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="footer">
-    <div class="container footer__inner">
-      <span>Demo creada por <strong>Vigolo Web Studio</strong></span>
-      <a class="footer__link" href="https://wa.me/5490000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+      <!-- SERVICIOS -->
+      <section class="section services-section" id="servicios">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">La carta</span>
+            <h2>Servicios pensados para que salgas impecable.</h2>
+            <p>Precios claros, sin sorpresas. Cada servicio incluye asesoramiento de estilo según tu tipo de rostro y cabello.</p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <div class="service-top"><span class="service-icon">✂</span><span class="service-price">$8.500</span></div>
+              <h3>Corte clásico</h3>
+              <p>Corte a tijera y máquina con acabado prolijo, lavado y peinado final.</p>
+              <span class="service-time">≈ 40 min</span>
+            </article>
+
+            <article class="service-card featured reveal">
+              <span class="ribbon">Más pedido</span>
+              <div class="service-top"><span class="service-icon">★</span><span class="service-price">$12.900</span></div>
+              <h3>Corte + Barba</h3>
+              <p>El combo completo: corte de precisión, perfilado de barba a navaja y ritual de toalla caliente.</p>
+              <span class="service-time">≈ 60 min</span>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-top"><span class="service-icon">▲</span><span class="service-price">$7.500</span></div>
+              <h3>Afeitado a navaja</h3>
+              <p>Afeitado clásico con navaja, aceites, toalla caliente y bálsamo calmante.</p>
+              <span class="service-time">≈ 35 min</span>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-top"><span class="service-icon">◆</span><span class="service-price">$6.900</span></div>
+              <h3>Diseño de barba</h3>
+              <p>Perfilado, contorno y modelado de barba con productos de mantenimiento premium.</p>
+              <span class="service-time">≈ 30 min</span>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-top"><span class="service-icon">✦</span><span class="service-price">$5.500</span></div>
+              <h3>Corte junior</h3>
+              <p>Corte para chicos hasta 12 años, con paciencia y buena onda de nuestros barberos.</p>
+              <span class="service-time">≈ 30 min</span>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-top"><span class="service-icon">♛</span><span class="service-price">$18.900</span></div>
+              <h3>Experiencia VIP</h3>
+              <p>Corte + barba + facial + bebida de cortesía. La experiencia completa para una ocasión especial.</p>
+              <span class="service-time">≈ 90 min</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESERVAS -->
+      <section class="section reservation-section" id="reservas">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Reserva online</span>
+            <h2>Elegí servicio, barbero y horario.</h2>
+            <p>Demo de reserva en frontend: mostrás disponibilidad, generás el turno con QR y confirmás por WhatsApp sin backend.</p>
+          </div>
+
+          <div class="booking-layout">
+            <form class="booking-card reveal" id="bookingForm">
+              <div class="field-group">
+                <label for="serviceSelect">Servicio</label>
+                <select id="serviceSelect" name="service"></select>
+              </div>
+
+              <div class="field-group">
+                <label for="barberSelect">Barbero</label>
+                <select id="barberSelect" name="barber"></select>
+              </div>
+
+              <div class="booking-fields">
+                <div class="field-group">
+                  <label for="daySelect">Día</label>
+                  <select id="daySelect" name="day"></select>
+                </div>
+                <div class="field-group">
+                  <label for="timeSelect">Horario</label>
+                  <select id="timeSelect" name="time"></select>
+                </div>
+              </div>
+
+              <div class="class-availability" id="classAvailability" aria-live="polite"></div>
+
+              <button class="btn btn-primary full-width" type="submit">Confirmar turno</button>
+            </form>
+
+            <aside class="booking-confirmation reveal" id="bookingConfirmation" aria-live="polite">
+              <div class="confirmation-empty" id="confirmationEmpty">
+                <span>Demo frontend</span>
+                <h3>Tu turno aparecerá acá.</h3>
+                <p>El cliente reserva de forma visual y confirma su turno por WhatsApp con un mensaje automático listo para enviar.</p>
+              </div>
+
+              <div class="confirmation-ready" id="confirmationReady" hidden>
+                <span class="success-pill">Turno reservado</span>
+                <h3 id="confirmedService">Corte + Barba</h3>
+                <dl class="reservation-summary">
+                  <div><dt>Servicio</dt><dd id="summaryService">Corte + Barba</dd></div>
+                  <div><dt>Barbero</dt><dd id="summaryBarber">Tomás</dd></div>
+                  <div><dt>Día</dt><dd id="summaryDay">Martes</dd></div>
+                  <div><dt>Horario</dt><dd id="summaryTime">18:30</dd></div>
+                </dl>
+                <div class="access-qr">
+                  <div class="qr-box" id="accessQr" aria-label="QR del turno"></div>
+                  <p>Mostrá este QR en recepción al llegar a tu turno.</p>
+                </div>
+                <a class="btn btn-secondary full-width" id="confirmWhatsapp" href="#" target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- EQUIPO -->
+      <section class="section team-section" id="equipo">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">El equipo</span>
+            <h2>Barberos que hacen de tu corte un oficio.</h2>
+            <p>Un equipo con estilo propio. Elegí tu barbero de confianza al reservar tu turno.</p>
+          </div>
+
+          <div class="team-grid">
+            <article class="team-card reveal">
+              <div class="team-photo"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80" alt="Barbero Tomás" loading="lazy"></div>
+              <div class="team-info">
+                <h3>Tomás</h3>
+                <span>Master Barber · Fundador</span>
+                <p>Especialista en cortes clásicos y afeitado a navaja.</p>
+              </div>
+            </article>
+            <article class="team-card reveal">
+              <div class="team-photo"><img src="https://images.unsplash.com/photo-1618077360395-f3068be8e001?auto=format&fit=crop&w=600&q=80" alt="Barbero Nico" loading="lazy"></div>
+              <div class="team-info">
+                <h3>Nico</h3>
+                <span>Barber · Fades &amp; diseños</span>
+                <p>El rey del degradé y los diseños con precisión milimétrica.</p>
+              </div>
+            </article>
+            <article class="team-card reveal">
+              <div class="team-photo"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80" alt="Barbero Lucas" loading="lazy"></div>
+              <div class="team-info">
+                <h3>Lucas</h3>
+                <span>Barber · Barba &amp; color</span>
+                <p>Diseño de barba, coloración y asesoramiento de estilo.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERÍA -->
+      <section class="section gallery-section" id="galeria">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Galería</span>
+            <h2>El resultado habla por sí solo.</h2>
+            <p>Trabajos reales de nuestros barberos. Tocá una foto para verla en grande.</p>
+          </div>
+
+          <div class="gallery-grid reveal" id="galleryGrid">
+            <button type="button" data-image="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=76" alt="Cliente con corte terminado en la barbería" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1521490878406-4d9f4f0e0a6a?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1521490878406-4d9f4f0e0a6a?auto=format&fit=crop&w=600&q=76" alt="Barbero trabajando con tijera" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=600&q=76" alt="Herramientas de barbería sobre la mesa" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1?auto=format&fit=crop&w=600&q=76" alt="Detalle de afeitado a navaja" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=600&q=76" alt="Interior de la barbería" loading="lazy">
+            </button>
+            <button type="button" data-image="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=1300&q=82">
+              <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=600&q=76" alt="Cliente en el sillón de barbero" loading="lazy">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIOS -->
+      <section class="section testimonials-section" id="testimonios">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Reseñas</span>
+            <h2>Lo que dicen los clientes.</h2>
+            <p>Opiniones reales que reflejan la experiencia dentro de la barbería.</p>
+          </div>
+          <div class="testimonial-carousel reveal" id="testimonialCarousel" aria-live="polite"></div>
+          <div class="testimonial-dots" id="testimonialDots" role="tablist" aria-label="Seleccionar reseña"></div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq-section" id="faq">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <span class="eyebrow">FAQ</span>
+            <h2>Preguntas frecuentes.</h2>
+            <p>Todo lo que necesitás saber antes de reservar.</p>
+          </div>
+          <div class="faq-list reveal" id="faqList">
+            <details open>
+              <summary>¿Necesito reservar turno o puedo ir sin cita?</summary>
+              <p>Podés venir sin turno, pero recomendamos reservar para no esperar. Esta demo muestra cómo el cliente reserva online y confirma por WhatsApp.</p>
+            </details>
+            <details>
+              <summary>¿Qué medios de pago aceptan?</summary>
+              <p>Efectivo, débito, crédito y transferencia. En la web real se puede sumar seña online para reducir ausencias.</p>
+            </details>
+            <details>
+              <summary>¿Puedo elegir mi barbero?</summary>
+              <p>Sí. Al reservar elegís el barbero de tu confianza y el sistema muestra su disponibilidad.</p>
+            </details>
+            <details>
+              <summary>¿La web funciona en celular?</summary>
+              <p>Totalmente. Está diseñada mobile-first, carga rápido y es compatible con GitHub Pages.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLOSING CTA -->
+      <section class="closing-cta" id="contacto">
+        <img class="closing-media" src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1600&q=80" alt="" aria-hidden="true">
+        <div class="closing-overlay"></div>
+        <div class="section-shell reveal">
+          <span class="eyebrow">Prioridad comercial</span>
+          <h2>Más turnos, menos ausencias y una imagen que se ve premium.</h2>
+          <p>Esta demo ya alcanza para que una barbería venda mejor: diseño profesional, reservas, galería, reseñas y contacto directo por WhatsApp.</p>
+          <div class="hero-actions center">
+            <a class="btn btn-primary js-whatsapp" href="#" data-message="Hola Santiago, vi la demo de la barbería y quiero información para tener una web similar para mi negocio.">Quiero esta web para mi barbería</a>
+            <a class="btn btn-secondary" href="#reservas">Probar la reserva</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button type="button" class="lightbox-close" aria-label="Cerrar galería">×</button>
+      <img src="" alt="Vista ampliada de la galería">
     </div>
-  </footer>
 
-  <a class="fab" href="https://wa.me/5490000000000?text=Hola!%20Quiero%20info%20sobre%20la%20demo%20de%20barber%C3%ADa." target="_blank" rel="noreferrer" aria-label="WhatsApp">
-    WhatsApp
-  </a>
-</body>
+    <footer class="site-footer">
+      <div class="section-shell footer-grid">
+        <div>
+          <a class="brand" href="#inicio" aria-label="Roble & Navaja Barbershop">
+            <span class="brand-mark">R<em>&amp;</em>N</span>
+            <span class="brand-text">
+              <strong>Roble &amp; Navaja</strong>
+              <small>Barbershop · Est. 2014</small>
+            </span>
+          </a>
+          <p>Demo estática compatible con GitHub Pages. HTML, CSS y JavaScript.</p>
+        </div>
+        <div>
+          <strong>Barbería</strong>
+          <a href="#servicios">Servicios</a>
+          <a href="#reservas">Turnos</a>
+          <a href="#equipo">Barberos</a>
+          <a href="#galeria">Galería</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <strong>Contacto</strong>
+          <a class="js-whatsapp" href="#" data-message="Hola Santiago, vi la demo de la barbería y quiero información para tener una web similar para mi negocio.">WhatsApp</a>
+          <span class="footer-line">Av. Corrientes 1234, CABA</span>
+          <span class="footer-line">Mar a Sáb · 10 a 21</span>
+        </div>
+      </div>
+      <div class="section-shell footer-bottom">
+        <span>© <span id="year"></span> Roble &amp; Navaja · Demo</span>
+        <span>Diseñada por <strong>Vigolo Web Studio</strong></span>
+      </div>
+    </footer>
+
+    <a class="floating-whatsapp js-whatsapp" href="#" data-message="Hola Santiago, vi la demo de la barbería y quiero información para tener una web similar para mi negocio." aria-label="Abrir WhatsApp">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
 </html>
